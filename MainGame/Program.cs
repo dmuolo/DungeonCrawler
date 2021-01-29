@@ -10,7 +10,10 @@ namespace MainGame
     {
         static void Main(string[] args)
         {
-
+            /*
+             * PAPER MARIO GAME
+             * The game starts with some kind of menu/music, press space or whatever
+             * 
         }
     }
 }
