@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1300
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainGame", "MainGame\MainGame.csproj", "{0A47AF7E-613D-4B9E-9249-C19930F35D31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLibrary1", "GameLibrary1\GameLibrary1.csproj", "{6C1F63AE-0B56-4B31-B9DB-EFC59AD4DE44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0A47AF7E-613D-4B9E-9249-C19930F35D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A47AF7E-613D-4B9E-9249-C19930F35D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A47AF7E-613D-4B9E-9249-C19930F35D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C1F63AE-0B56-4B31-B9DB-EFC59AD4DE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1F63AE-0B56-4B31-B9DB-EFC59AD4DE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1F63AE-0B56-4B31-B9DB-EFC59AD4DE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1F63AE-0B56-4B31-B9DB-EFC59AD4DE44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
