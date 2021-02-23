@@ -107,14 +107,24 @@ namespace MainGame
 
             Console.ForegroundColor = ConsoleColor.White;
 
+            //#region Test
+            //Console.Beep(250, 1100);
+            //Random textBeepEffect = new Random();
+            //int beeps = textBeepEffect.Next(37, 1000);
+            //Console.Beep(beeps, 500);
+            //System.Threading.Thread.Sleep(2000);
+            //Console.Beep(beeps, 500);
+            //#endregion
+
             string intro1 = String.Format("{0, " + 72 + "}", "Mail call!");
             Console.WriteLine();
             Console.WriteLine();
             foreach (char c in intro1)
             {
                 Console.Write(c);
-                System.Threading.Thread.Sleep(60);
+                System.Threading.Thread.Sleep(100);
             }
+
             System.Threading.Thread.Sleep(300);
             Console.Beep(100, 300);
             System.Threading.Thread.Sleep(100);
@@ -270,6 +280,8 @@ namespace MainGame
 
             //Play twink's theme while you talk to princess peach (multi-threading?)
             //Oh, Mario! You came to the party to see me!
+
+
 
         }//end Main()
     }//end class
