@@ -13,7 +13,7 @@ namespace GameLibrary1
         public int MaxDamage { get; set; }
         public string Description { get; set; }
         public bool IsSpiked { get; set; }
-        public bool IsGround { get; set; }
+        public bool IsAir { get; set; }
 
         public int MinDamage
         {
@@ -24,13 +24,13 @@ namespace GameLibrary1
             }
         }//end MinDamage
 
-        public Enemy(string name, int maxLife, int life, int hitChance, int block, string description, int minDamage, int maxDamage, bool isSpiked, bool isGround) : base(name, maxLife, life, hitChance, block)
+        public Enemy(string name, int maxLife, int life, int hitChance, int block, string description, int minDamage, int maxDamage, bool isSpiked, bool isAir) : base(name, maxLife, life, hitChance, block)
         {
             Description = description;
             MinDamage = minDamage;
             MaxDamage = maxDamage;
             IsSpiked = isSpiked;
-            IsGround = isGround;
+            IsAir = isAir;
 
         }//end ctor
 
@@ -41,7 +41,7 @@ namespace GameLibrary1
 
         public override int CalcDamage()
         {
-            return new Random().Next(MinDamage, MaxDamage + 1);
+            return new Random().Next(MinDamage, MaxDamage);
         }//end CalcDamage()
 
     }

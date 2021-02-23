@@ -12,7 +12,7 @@ namespace GameLibrary1
 
         public int MaxDamage { get; set; }
         public string Name { get; set; }
-        public bool IsGround { get; set; }
+        public bool IsAir { get; set; }
         public string Description { get; set; }
 
         public int MinDamage
@@ -24,13 +24,13 @@ namespace GameLibrary1
             }
         }//end MinDamage
 
-        public Weapon(string name, int minDamage, int maxDamage, string description, bool isGround)
+        public Weapon(string name, int minDamage, int maxDamage, string description, bool isAir)
         {
             Name = name;
             MinDamage = minDamage;
             MaxDamage = maxDamage;
             Description = description;
-            IsGround = isGround;
+            IsAir = isAir;
         }//end ctor
 
         public override string ToString()
@@ -41,7 +41,7 @@ namespace GameLibrary1
                 Description,
                 MinDamage,
                 MaxDamage,
-                IsGround ? "Ground" : "Air");
+                IsAir ? "Air" : "Ground");
         }
     }
 }

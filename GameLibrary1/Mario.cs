@@ -14,5 +14,32 @@ namespace GameLibrary1
         {
             EquippedWeapon = equippedWeapon;
         }
+
+        public override string ToString()
+        {
+            return string.Format("Life: {0} of {1}\n" +
+                "Hit Chance: {2}%\nBlock: {3}%\n",
+                Life,
+                MaxLife,
+                CalcHitChance(),//to see modified value
+                Block);//no parent string exists
+        }//end ToString()
+
+        public override int CalcDamage()
+        {
+            //Random rand = new Random();
+
+            //int damage = rand.Next(EquippedWeapon.MinDamage, EquippedWeapon.MaxDamage + 1);
+
+            //return damage;
+
+            return new Random().Next(EquippedWeapon.MinDamage, EquippedWeapon.MaxDamage + 1);
+        }
+
+        public override int CalcHitChance()
+        {
+            return HitChance;
+        }
+
     }
 }

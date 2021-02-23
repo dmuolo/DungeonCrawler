@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameLibrary1
 {
-    class Combat
+    public class Combat
     {
         public static void DoAttack(Character attacker, Character defender)
         {
@@ -21,13 +21,17 @@ namespace GameLibrary1
                 defender.Life -= damageDealt;
 
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"{attacker.Name} hit {defender.Name} for " +
+                Console.WriteLine($"\n\n{attacker.Name} hit {defender.Name} for " +
                     $"{damageDealt} damage!");
                 Console.ResetColor();
+                Console.Read();
+                Console.Clear();
             }
             else
             {
-                Console.WriteLine($"{attacker.Name} missed!");
+                Console.WriteLine($"\n\n{attacker.Name} missed!");
+                Console.Read();
+                Console.Clear();
             }
         }// end DoAttack()
 
