@@ -24,14 +24,10 @@ namespace GameLibrary1
                 Console.WriteLine($"\n\n{attacker.Name} hit {defender.Name} for " +
                     $"{damageDealt} damage!");
                 Console.ResetColor();
-                Console.Read();
-                Console.Clear();
             }
             else
             {
                 Console.WriteLine($"\n\n{attacker.Name} missed!");
-                Console.Read();
-                Console.Clear();
             }
         }// end DoAttack()
 

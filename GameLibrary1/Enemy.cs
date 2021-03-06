@@ -14,6 +14,7 @@ namespace GameLibrary1
         public string Description { get; set; }
         public bool IsSpiked { get; set; }
         public bool IsAir { get; set; }
+        public bool IsFire { get; set; }
 
         public int MinDamage
         {
@@ -24,19 +25,20 @@ namespace GameLibrary1
             }
         }//end MinDamage
 
-        public Enemy(string name, int maxLife, int life, int hitChance, int block, string description, int minDamage, int maxDamage, bool isSpiked, bool isAir) : base(name, maxLife, life, hitChance, block)
+        public Enemy(string name, int maxLife, int life, int hitChance, int block, string description, int minDamage, int maxDamage, bool isSpiked, bool isAir, bool isFire) : base(name, maxLife, life, hitChance, block)
         {
             Description = description;
             MinDamage = minDamage;
             MaxDamage = maxDamage;
             IsSpiked = isSpiked;
             IsAir = isAir;
+            IsFire = isFire;
 
         }//end ctor
 
         public override string ToString()
         {
-            return string.Format($"{Name}\n{Description}\nLife: {Life}");
+            return string.Format($"{Name}\n{Description}\nLife: {Life}\nAttack Power: {MaxDamage}");
         }//end ToString()
 
         public override int CalcDamage()
