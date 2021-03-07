@@ -12,11 +12,13 @@ namespace MainGame
 
         static void Main(string[] args)
         {
-
+            #region Settings
 
             Console.WindowWidth = 131;
             Console.Title = String.Format("{0, " + 144 + "}", "A Paper Mario Adventure");
             Console.CursorVisible = false;
+
+            #endregion
 
             #region Start Game
 
@@ -3935,6 +3937,7 @@ namespace MainGame
             System.Threading.Thread.Sleep(5000);
             Console.ResetColor();
 
+
             #endregion
 
             #region Bowser
@@ -4012,12 +4015,13 @@ namespace MainGame
 
             Mario mario4 = new Mario("Mario", 50, 50, 75, 10, marioWeapon);
             bool finalFight = true;
+            int enemiesDefeated4 = 0;
 
             do
             {
-                Enemy bowser0 = new Enemy("Bowser", 25, 25, 30, 0, "Small fry. No problemo!", 3, 5, false, false, false);
+                Enemy bowser0 = new Enemy("Bowser", 25, 25, 30, 0, "The koopa king, and he ain't happy!", 3, 5, false, false, false);
                 Enemy bowser1 = new Enemy("Bowser - Koopa Clown Car", 25, 25, 30, 10, "Oh no! He's in the Koopa Clown Car!", 5, 7, false, true, false);
-                Enemy bowser2 = new Enemy("Bowser - Star Rod", 50, 50, 40, 10, "A goomba with a spike on its head.", 5, 10, false, false, false);
+                Enemy bowser2 = new Enemy("Bowser - Star Rod", 50, 50, 40, 10, "Great... and now he's got the Star Rod!", 5, 10, false, false, false);
 
                 Enemy[] enemies =
                 {
@@ -4028,23 +4032,22 @@ namespace MainGame
                 Console.Clear();
                 Console.ResetColor();
 
-                int enemiesDefeated4 = 0;
                 bool exitEncounter = false;
 
                 do
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write($"Mario's ");
+                    Console.Write($" Mario's ");
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write($"HP: {mario.Life} / {mario.MaxLife} ");
-                    Console.Write("--------------------------------------");
+                    Console.Write($"HP: {mario4.Life} / {mario4.MaxLife} ");
+                    Console.Write("---------------------------------");
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(" Final Battle ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write($"Phase: {enemiesDefeated4} / 3");
-                    Console.Write(" -------------------------------- ");
+                    Console.Write(" --------------------------------- ");
                     int numChars = (enemy.Name).Length;
-                    Console.CursorLeft = Console.BufferWidth - (numChars + 13);
+                    Console.CursorLeft = Console.BufferWidth - (21);
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write($"Bowser's");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -4201,83 +4204,84 @@ namespace MainGame
                         Console.Write("@@@@@#@##..,.,@(@%%&&&@&&@&&@@@@@@@");//18 M
                         Console.CursorLeft = Console.BufferWidth - 35;
                         Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//18
-                    }                    
+                    }
                     else
-                    {//koopatrol
+                    {//star rod
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@@@@@@@@@@@@@*..,***..@@@@@@@@@");//1 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@&,&@@@@@@@@@@@@@@@@@");
+                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@@@@@@@@&@.,//***.&&&@/.@@@@@@@");//2 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@# *,%@@@@@@@@@@@@@@@@");
+                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@@@@@@&@.****/***@*&&**.&@@@@@@");//3 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@&*/*&@@@@@@@@@@@@@@@@");
+                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@@@&@@@./*****,***/*/*/****/. @");//4 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@&&,,,,,#&@&@@@@@@@@@@@@@@@@@");
+                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@%@./**/*/...,....&&%%(... /@@&");//5 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@% .,**,,,,,,%#%@@@@@@@@@@@@@@");//5
+                        Console.Write("@@@@@&@&@@@@@@@@@@@/%///%@@@@@@@@@@");//5
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@&.,.%&#.**,%&%%%.%%%**(,.%@@@@");//6 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@**&.&&*/&,**,%##&@@@@@@@@@@@@");//6
+                        Console.Write("@@@@@*****&&@%@@@%(%@((((@@&@/*...@");//6
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@&/,%%%*&**.&&* &&%&&%%%%%%.@@@");//7 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@&****,(&&&&&&/(*&&&%@@@@@@@@@@@@");//7
+                        Console.Write("@@@(**% #/*//@,*%.&##% .&/,/@&(@*@@");//7
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@%@..%%#%%%%&%.,,,*,&%%%%&..@@@");//8 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@&# *@**,*****@,*#,@&&&&%@@@@@@@@@@");//8
+                        Console.Write("@@@&@#.//*./@%,,,,,,,,,,,,@@@@/.&@@");//8
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@@@@#@@*,..%%%&.*,,,,,,.&@@@@@@");//9 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@&. ***,****//@,%@/@&&&&@@@@@@@@@@@");//9
+                        Console.Write("@@@@&&&/#(((&/,,/**##*,,(,,&&@@@@@@");//9
                         Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@..,****/****,..#@@@@@@@@@@@@");//10 M
+                        Console.Write("@@@@@@*@#*/*( ##,##/(&(,%**/%***&@@");//10 M
                         Console.CursorLeft = Console.BufferWidth - 35;
                         Console.Write("@@& ,***,**%%*,,**%@&&@&@@&&*,&@@@@");//10
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@%@..&&*.*.***/***.***(@@.&&%.#.@@");//11 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@&&***&#//(%**%@#/%##&..,,,&@@@@@");//11
+                        Console.Write("@@@@@@%#@.@****,,,,,,,/#.% #&/**&@@");//11
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@&,%&&&&&&&&.*.**&%%****&,&&(%#%,@@");//12 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@&*,,,**,&/.*%%**/&//#&@@");//12
+                        Console.Write("@@@@@,#(.@**/..,.. ...@@%/@@&@#@@@@");//12
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@#@.&*&,&&%#.,***,,.****. &&.%&&#@@");//13 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@&/////,&**&.%%&&&&&@@@@");//13
+                        Console.Write("@@@*&@/*****@.........@@@@@@@@@@@@@");//13
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@&,(&&&&&&(.***********,&.&&&%,&&@");//14 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@&.,/(/&##%%@.,*/&.#&,..,&&@@");//14
+                        Console.Write("@@(*&/*****//.......,@**&@@@@@@@@@@");//14
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@%&@#*.**/*,.******,./**,.&@&%@@@");//15 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@&/%*/&**#,,,,,,(&.%&*,*(%&&@");//15
+                        Console.Write("@@@@@//****/.,,,,.*****&@@@@@@@@@@@");//15
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@&@.*/*///*/.@./////*///*.&@@@@@");//16 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@&/*@..***&%,,.%@@@@@@@");//16
+                        Console.Write("@@@&/****//&@@@@@//**/***&@@@@@@@@@");//16
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@#@.*////*/*,&@*.**////,.@&@@@@@");//17 M
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@&&&&&&&&&&/**&&@@@@");//17
+                        Console.Write("@@@. .#/*&&@@@@@@@@&&@*,&@@@@@@@@@@");//17
                         Console.CursorLeft = Console.BufferWidth - 130;
                         Console.Write("@@@@@#@##..,.,@(@%%&&&@&&@&&@@@@@@@");//18 M
                         Console.CursorLeft = Console.BufferWidth - 35;
                         Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//18
                     }
 
+                    Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " J) ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -4803,7 +4807,7 @@ namespace MainGame
                         switch (exitChoice)
                         {
                             case ConsoleKey.Y:
-                                mario3.Life = 10;
+                                mario4.Life = 10;
                                 enemiesDefeated4 = 0;
                                 Console.Clear();
                                 break;
