@@ -266,7 +266,7 @@ namespace MainGame
             System.Threading.Thread.Sleep(1000);
 
             #endregion
-            
+
             Console.Clear();
 
             Console.BackgroundColor = ConsoleColor.Black;
@@ -285,7 +285,7 @@ namespace MainGame
 
             System.Threading.Thread.Sleep(100);
 
-    
+
 
             Console.WriteLine();
             Console.WriteLine();
@@ -324,10 +324,10 @@ namespace MainGame
             System.Threading.Thread.Sleep(3000);
 
             Console.Clear();
-            
+
             string intro14 = "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` R O U N D ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` O N E ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `" + " ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `";
 
-            
+
             foreach (char c in intro14)
             {
                 Console.Write(c);
@@ -339,6 +339,8 @@ namespace MainGame
             */
 
             #endregion
+
+            #region Region 1
             Weapon weapon0 = new Weapon("Jump", 1, 1, "A plain old jump.", true);
             Weapon weapon1 = new Weapon("Hammer", 1, 1, "A plain old hammer.", false);
             Weapon marioWeapon = new Weapon("No attack equipped", 0, 0, "N/A", false);
@@ -347,14 +349,13 @@ namespace MainGame
             int enemiesDefeated = 0;
             bool region1 = true;
 
-            #region Region 1
             do
             {
-                Enemy goomba = new Enemy("Goomba", 2, 2, 20, 0, "Small fry.", 1, 1, false, false, false);
-                Enemy paragoomba = new Enemy("Paragoomba", 2, 2, 20, 0, "A goomba with wings.", 1, 1, false, true, false);
-                Enemy spikyGoomba = new Enemy("Spiky Goomba", 2, 2, 20, 0, "A goomba with a spike on its head.", 2, 2, true, false, false);
-                Enemy koopa = new Enemy("Koopa", 4, 4, 30, 10, "A koopa troopa. They're Bowser's followers.", 2, 2, false, false, false);//1 defense
-                Enemy paratroopa = new Enemy("Paratroopa", 4, 4, 30, 10, "A flying koopa troopa! They're Bowser's followers.", 2, 2, false, true, false);//1 defense
+                Enemy goomba = new Enemy("Goomba", 2, 2, 30, 0, "Small fry.", 1, 1, false, false, false);
+                Enemy paragoomba = new Enemy("Paragoomba", 2, 2, 30, 0, "A goomba with wings.", 1, 1, false, true, false);
+                Enemy spikyGoomba = new Enemy("Spiky Goomba", 2, 2, 30, 0, "A goomba with a spike on its head.", 2, 2, true, false, false);
+                Enemy koopa = new Enemy("Koopa", 4, 4, 35, 10, "A koopa troopa. They're Bowser's followers.", 2, 2, false, false, false);//1 defense
+                Enemy paratroopa = new Enemy("Paratroopa", 4, 4, 40, 10, "A flying koopa troopa! They're Bowser's followers.", 2, 2, false, true, false);//1 defense
 
                 Enemy[] enemies =
                 {
@@ -422,12 +423,11 @@ namespace MainGame
                     int numChars = (enemy.Name).Length;
                     Console.CursorLeft = Console.BufferWidth - (numChars + 13);
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.Write($"{enemy.Name}");
+                    Console.Write($"{enemy.Name}'s");
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write($"'s HP: {enemy.Life} / {enemy.MaxLife} ");
+                    Console.Write($" HP: {enemy.Life} / {enemy.MaxLife} ");
                     Console.WriteLine();
                     Console.CursorVisible = false;
-                    Console.WriteLine();
 
                     if (enemy.Name == "Goomba")
                     {
@@ -610,7 +610,7 @@ namespace MainGame
                         Console.CursorLeft = Console.BufferWidth - 35;
                         Console.Write("@@@@@@@@@@&./@&,##(,.@@@@@@@@@@@@@@");
                         Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@&@#@&@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                         Console.CursorLeft = Console.BufferWidth - 35;
                         Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                         Console.CursorLeft = Console.BufferWidth - 35;
@@ -619,33 +619,79 @@ namespace MainGame
                         Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                     }
 
-                    string chooseAction = ("Choose an action: \n");
-                    foreach (char c in chooseAction)
-                    {
-                        Console.Write(c);
-                        System.Threading.Thread.Sleep(5);
-                    }
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write("J) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Jump\n");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("H) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Hammer\n");
+                    /*
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write("I) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Item\n");
+                    */
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Write("T) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Tattle\n");
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.Write("F) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Flee\n");
+                    Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.Write("Esc) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Quit Game");
 
-                    Console.WriteLine();
-                    Console.WriteLine("J) Jump\nH) Hammer\nI)Item\nT) Tattle\nF) Flee\nEsc) Quit Game");
-
-                    ConsoleKey userChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                    ConsoleKey userChoice = Console.ReadKey(true).Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
 
 
                     switch (userChoice)
                     {
                         case ConsoleKey.J:
-                            Console.Clear();
                             marioWeapon = weapon0;
+                            Console.Beep(100, 150);
+                            Console.Beep(250, 150);
                             if (enemy.IsSpiked == true)
                             {
+                                System.Threading.Thread.Sleep(1000);
+                                Console.Beep(60, 200);
                                 mario.Life--;
-                                Console.WriteLine("You jumped on a spiked enemy! Mario lost 1 HP.");
+                                Console.WriteLine();
+                                Console.CursorLeft = Console.BufferWidth - 85;
+                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                string spiked = "You jumped on a spiked enemy! Mario lost 1 HP.";
+                                foreach (char c in spiked)
+                                {
+                                    Console.Write(c);
+                                    System.Threading.Thread.Sleep(20);
+                                }
+                                System.Threading.Thread.Sleep(2000);
+                                Console.ResetColor();
+                                Combat.DoAttack(enemy, mario);
+                                System.Threading.Thread.Sleep(2000);
                             }
                             else if (enemy.IsFire == true)
                             {
+                                System.Threading.Thread.Sleep(1000);
+                                Console.Beep(60, 200);
                                 mario.Life--;
-                                Console.WriteLine("You jumped on a fire enemy! Mario lost 1 HP.");
+                                Console.WriteLine();
+                                Console.CursorLeft = Console.BufferWidth - 87;
+                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                string fire = "You jumped on a fire enemy! Mario lost 1 HP.";
+                                foreach (char c in fire)
+                                {
+                                    Console.Write(c);
+                                    System.Threading.Thread.Sleep(20);
+                                }
+                                System.Threading.Thread.Sleep(2000);
+                                Console.ResetColor();
+                                Combat.DoAttack(enemy, mario);
+                                System.Threading.Thread.Sleep(2000);
                             }
                             else
                             {
@@ -653,21 +699,52 @@ namespace MainGame
                                 if (enemy.Life <= 0)
                                 {
                                     //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
-                                    Console.WriteLine($"\nYou defeated the {enemy.Name}!");
+                                    Console.ForegroundColor = ConsoleColor.Black;
+                                    Console.BackgroundColor = ConsoleColor.Yellow;
+                                    System.Threading.Thread.Sleep(1000);
+
+                                    Console.Beep(233, 250);
+                                    Console.Beep(220, 250);
+                                    Console.Beep(196, 250);
+                                    Console.Beep(175, 450);
+                                    System.Threading.Thread.Sleep(50);
+
+                                    Console.Beep(196, 250);
+                                    Console.Beep(220, 250);
+                                    Console.Beep(233, 100);
+                                    System.Threading.Thread.Sleep(150);
+                                    Console.Beep(175, 100);
+                                    System.Threading.Thread.Sleep(150);
+                                    Console.Beep(233, 100);
+
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    string defeat = $"You defeated the {enemy.Name}!";
+                                    int length = enemy.Name.Length;
+                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
+                                    foreach (char c in defeat)
+                                    {
+                                        Console.Write(c);
+                                        System.Threading.Thread.Sleep(5);
+                                    }
+                                    System.Threading.Thread.Sleep(2000);
                                     enemiesDefeated++;
                                     exitEncounter = true;
-                                    Console.Read();
+                                    Console.ResetColor();
                                 }
                             }
                             break;
 
                         case ConsoleKey.H:
-                            Console.Clear();
                             marioWeapon = weapon1;
+                            Console.Beep(200, 500);
+                            System.Threading.Thread.Sleep(400);
+                            Console.Beep(70, 100);
                             if (enemy.IsAir == true)
                             {
                                 Console.WriteLine("Hammer is ineffective on flying enemies. You missed!");
-                                Console.Read();
+                                System.Threading.Thread.Sleep(2000);
                             }
                             else
                             {
@@ -678,21 +755,20 @@ namespace MainGame
                                     Console.WriteLine($"\nYou defeated the {enemy.Name}!");
                                     enemiesDefeated++;
                                     exitEncounter = true;
-                                    Console.Read();
                                 }
                             }
                             break;
-
+                            /*
                         case ConsoleKey.I:
-                            Console.Clear();
                             Combat.DoBattle(mario, enemy);
+                            Console.Clear();
                             if (enemy.Life <= 0)
                             {
                                 Console.WriteLine($"\nYou defeated the {enemy.Name}!");
                                 enemiesDefeated++;
-                                Console.Read();
                             }
                             break;
+                            */
 
                         case ConsoleKey.T:
                             Console.Clear();
@@ -704,7 +780,6 @@ namespace MainGame
                                 switch (space)
                                 {
                                     case ConsoleKey.Spacebar:
-                                        Console.Clear();
                                         leaveStats = true;
                                         break;
                                 }
@@ -713,31 +788,86 @@ namespace MainGame
                             break;
 
                         case ConsoleKey.F:
-                            Console.Clear();
-                            Console.WriteLine("FLEE!");
                             Console.WriteLine($"{enemy.Name} attacks you as you flee!");
                             Combat.DoAttack(enemy, mario);
+                            exitEncounter = true;
                             break;
 
                         case ConsoleKey.Escape:
                             Console.Clear();
-                            Console.WriteLine("You escaped!");
-                            exitEncounter = true;
+
+                            Console.WriteLine("Are you sure?\n" +
+                                "Y) Yes, I want to leave.\n" +
+                                "N) No! I want to keep playing!");
+                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+
+                            switch (exitChoice)
+                            {
+                                case ConsoleKey.Y:
+                                    Console.Clear();
+                                    Console.WriteLine("Thank you for playing my game!");
+                                    System.Threading.Thread.Sleep(3000);
+                                    Console.WriteLine();
+                                    Environment.Exit(0);
+                                    break;
+                                case ConsoleKey.N:
+                                    break;
+                            }
                             break;
+
                     }
                     if (mario.Life <= 0)
                     {
-                        Console.WriteLine("Mario has died.");
-                        region1 = true;
+                        System.Threading.Thread.Sleep(1500);
+                        Console.Clear();
+                        Console.WriteLine("GAME OVER");
+                        Console.WriteLine();
+                        Console.WriteLine("Would you like to try again?\n\n" +
+                            "Y) Yes, I want to try again.\n" +
+                            "N) No! This game is terrible!");
+
+                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+
+                        switch (exitChoice)
+                        {
+                            case ConsoleKey.Y:
+                                mario.Life = 10;
+                                enemiesDefeated = 0;
+                                Console.Clear();
+                                break;
+                            case ConsoleKey.N:
+                                Console.Clear();
+                                Console.WriteLine("Thank you for playing my game!");
+                                System.Threading.Thread.Sleep(3000);
+                                Console.WriteLine();
+                                Environment.Exit(0);
+                                break;
+                            default:
+                                Console.Clear();
+                                break;
+                        }
+                        break;
+
                     }
 
+                    Console.Clear();
 
                 } while (region1 && !exitEncounter);
             } while (region1 && enemiesDefeated < 7);
 
             #endregion
 
-            #region Bye
+            #region Region 2
+            string region2Intro = "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` R O U N D ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` T W O ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `" + " ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `";
+
+
+            foreach (char c in region2Intro)
+            {
+                Console.Write(c);
+                System.Threading.Thread.Sleep(1);
+            }
+            System.Threading.Thread.Sleep(3000);
+            Console.Clear();
 
             Weapon weapon2 = new Weapon("Super Jump", 2, 2, "Now that's a jump.", true);
             Weapon weapon3 = new Weapon("Super Hammer", 2, 2, "Now's that's a hammer.", false);
@@ -746,7 +876,6 @@ namespace MainGame
             int enemiesDefeated2 = 0;
             bool region2 = true;
 
-            #region Region 2
             do
             {
                 Enemy shyGuy = new Enemy("Shy Guy", 7, 7, 25, 0, "A little red guy causing a ruckus in the Toy Box.", 2, 2, false, false, false);
@@ -1128,6 +1257,19 @@ namespace MainGame
                 } while (region2 && !exitEncounter);
             } while (region2 && enemiesDefeated2 < 7);
 
+            #endregion
+
+            #region Region 3
+            string region3Intro = "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` R O U N D ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` T H R E E ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` " + "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `" + " ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `";
+
+            foreach (char c in region3Intro)
+            {
+                Console.Write(c);
+                System.Threading.Thread.Sleep(1);
+            }
+            System.Threading.Thread.Sleep(3000);
+            Console.Clear();
+
             Weapon weapon4 = new Weapon("Ultra Jump", 2, 2, "The best jump there is.", true);
             Weapon weapon5 = new Weapon("Ultra Hammer", 2, 2, "The best hammer out there.", false);
             Mario mario3 = new Mario("Mario", 20, 20, 75, 20, marioWeapon);
@@ -1135,7 +1277,6 @@ namespace MainGame
             int enemiesDefeated3 = 0;
             bool region3 = true;
 
-            #region Region 3
             do
             {
                 Enemy dryBones = new Enemy("Dry Bones", 8, 8, 20, 0, "A skeleton koopa.", 4, 4, false, false, false);//2 defense
@@ -1527,6 +1668,8 @@ namespace MainGame
                 } while (region3 && !exitEncounter);
             } while (region3 && enemiesDefeated3 < 7);
 
+            #endregion
+
             #region Bowser
             Console.CursorLeft = Console.BufferWidth - 35;
             Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -1564,9 +1707,6 @@ namespace MainGame
             Console.Write("@@@@@@@@@@@@@@@@@ @.@/////((@@@@@@@");//14
             #endregion
 
-            #endregion
-            #endregion
-            #endregion
         }//end Main()
     }//end class
 }//end namespace
