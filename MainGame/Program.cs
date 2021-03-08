@@ -9,7 +9,6 @@ namespace MainGame
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             #region Settings
@@ -444,43 +443,6 @@ namespace MainGame
                     Console.WriteLine();
                     Console.CursorVisible = false;
 
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//1
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//3
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//5
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//7
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//9
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@  ////  @ @@@@@@@@@@@");
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@//@@ / @ / @@@@@@@@@@@");//11
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@ //,@@.,#@@///@@@@@@@@@@");
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@&//,@////////,.// @@@@@@@@");//13
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@ ///////////////@@@@@@@@@");
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@ ,,  &&&&&&#@@@@@@@@@@@@@");//15
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@ %%% *.&&&&& ** @@@@@@@@@@");
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@, %*.@@@.*****%@@@@@@@@@");//17
-                    //Console.CursorLeft = Console.BufferWidth - 82;
-                    //Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-
                     if (enemy.Name == "Goomba")
                     {
                         Console.CursorLeft = Console.BufferWidth - 130;
@@ -856,7 +818,8 @@ namespace MainGame
                         Console.CursorLeft = Console.BufferWidth - 35;
                         Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                     }
-                    Console.WriteLine();
+
+                    #region Action Menu
                     Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " J) ");
@@ -866,12 +829,6 @@ namespace MainGame
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " H) ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Hammer\n");
-                    /*
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write("I) ");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write("Item\n");
-                    */
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " T) ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -884,9 +841,10 @@ namespace MainGame
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " Esc) ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Quit Game");
+                    Console.WriteLine();
 
-                    ConsoleKey userChoice = Console.ReadKey(true).Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
-
+                    ConsoleKey userChoice = Console.ReadKey(true).Key;
+                    #endregion
 
                     switch (userChoice)
                     {
@@ -900,7 +858,7 @@ namespace MainGame
                                 Console.Beep(60, 200);
                                 mario.Life--;
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 100;
+                                Console.CursorLeft = Console.BufferWidth - 90;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string spiked = " You jumped on a spiked enemy! Mario lost 1 HP. ";
@@ -920,7 +878,7 @@ namespace MainGame
                                 Console.Beep(60, 200);
                                 mario.Life--;
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 100;
+                                Console.CursorLeft = Console.BufferWidth - 83;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string fire = " You jumped on a fire enemy! Mario lost 1 HP. ";
@@ -944,25 +902,25 @@ namespace MainGame
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
 
-                                    Console.Beep(233, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(196, 125);
-                                    Console.Beep(175, 63);
-                                    System.Threading.Thread.Sleep(25);
+                                    Console.Beep(233, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(175, 360);
+                                    System.Threading.Thread.Sleep(40);
 
-                                    Console.Beep(196, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(233, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(175, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(233, 50);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(233, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(175, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(233, 160);
 
                                     Console.WriteLine();
                                     Console.WriteLine();
                                     string defeat = $" You defeated the {enemy.Name}! ";
                                     int length = enemy.Name.Length;
-                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
                                     foreach (char c in defeat)
                                     {
                                         Console.Write(c);
@@ -984,7 +942,7 @@ namespace MainGame
                             if (enemy.IsAir == true)
                             {
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 105;
+                                Console.CursorLeft = Console.BufferWidth - 92;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string air = " Hammer is ineffective on flying enemies. You missed! ";
@@ -1008,25 +966,25 @@ namespace MainGame
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
 
-                                    Console.Beep(233, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(196, 125);
-                                    Console.Beep(175, 63);
-                                    System.Threading.Thread.Sleep(25);
+                                    Console.Beep(233, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(175, 360);
+                                    System.Threading.Thread.Sleep(40);
 
-                                    Console.Beep(196, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(233, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(175, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(233, 50);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(233, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(175, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(233, 160);
 
                                     Console.WriteLine();
                                     Console.WriteLine();
                                     string defeat = $" You defeated the {enemy.Name}! ";
                                     int length = enemy.Name.Length;
-                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
                                     foreach (char c in defeat)
                                     {
                                         Console.Write(c);
@@ -1413,6 +1371,20 @@ namespace MainGame
                         Console.WriteLine();
                         Console.WriteLine();
                         Console.ForegroundColor = ConsoleColor.White;
+                        Console.Beep(220, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(330, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(294, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(262, 150);
+
                         string gameOver = String.Format("{0, " + 73 + "}", "GAME OVER\n");
                         foreach (char c in gameOver)
                         {
@@ -1536,6 +1508,20 @@ namespace MainGame
             Console.WriteLine();
             Console.ResetColor();
 
+            Console.Beep(220, 150);
+            Console.Beep(220, 150);
+            Console.Beep(233, 150);
+            Console.Beep(220, 150);
+            Console.Beep(196, 150);
+            Console.Beep(175, 150);
+            Console.Beep(131, 150);
+            Console.Beep(175, 150);
+            Console.Beep(196, 250);
+            System.Threading.Thread.Sleep(350);
+            Console.Beep(262, 150);
+            Console.Beep(262, 800);
+            System.Threading.Thread.Sleep(400);
+
             string super = String.Format("{0, " + 71 + "}", "You acquired the ");
             foreach (char c in super)
             {
@@ -1545,6 +1531,7 @@ namespace MainGame
             System.Threading.Thread.Sleep(1000);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("SUPER JUMP");
+            Console.Beep(208, 900);
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write(",");
             Console.WriteLine();
@@ -1552,6 +1539,7 @@ namespace MainGame
             System.Threading.Thread.Sleep(1000);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write(String.Format("{0, " + 74 + "}", "SUPER HAMMER"));
+            Console.Beep(233, 900);
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write(",");
             Console.WriteLine();
@@ -1560,6 +1548,7 @@ namespace MainGame
             Console.Write(String.Format("{0, " + 65 + "}", "and "));
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("10 MORE HP!");
+            Console.Beep(262, 900);
             System.Threading.Thread.Sleep(5000);
             Console.ResetColor();
             #endregion
@@ -2059,12 +2048,6 @@ namespace MainGame
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " H) ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Super Hammer\n");
-                    /*
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write("I) ");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write("Item\n");
-                    */
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " T) ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -2093,7 +2076,7 @@ namespace MainGame
                                 Console.Beep(60, 200);
                                 mario2.Life--;
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 100;
+                                Console.CursorLeft = Console.BufferWidth - 90;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string spiked = " You jumped on a spiked enemy! Mario lost 1 HP. ";
@@ -2113,7 +2096,7 @@ namespace MainGame
                                 Console.Beep(60, 200);
                                 mario2.Life--;
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 100;
+                                Console.CursorLeft = Console.BufferWidth - 83;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string fire = " You jumped on a fire enemy! Mario lost 1 HP. ";
@@ -2137,25 +2120,25 @@ namespace MainGame
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
 
-                                    Console.Beep(233, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(196, 125);
-                                    Console.Beep(175, 63);
-                                    System.Threading.Thread.Sleep(25);
+                                    Console.Beep(233, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(175, 360);
+                                    System.Threading.Thread.Sleep(40);
 
-                                    Console.Beep(196, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(233, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(175, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(233, 50);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(233, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(175, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(233, 160);
 
                                     Console.WriteLine();
                                     Console.WriteLine();
                                     string defeat = $" You defeated the {enemy.Name}! ";
                                     int length = enemy.Name.Length;
-                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
                                     foreach (char c in defeat)
                                     {
                                         Console.Write(c);
@@ -2177,7 +2160,7 @@ namespace MainGame
                             if (enemy.IsAir == true)
                             {
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 105;
+                                Console.CursorLeft = Console.BufferWidth - 92;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string air = " Hammer is ineffective on flying enemies. You missed! ";
@@ -2201,25 +2184,25 @@ namespace MainGame
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
 
-                                    Console.Beep(233, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(196, 125);
-                                    Console.Beep(175, 63);
-                                    System.Threading.Thread.Sleep(25);
+                                    Console.Beep(233, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(175, 360);
+                                    System.Threading.Thread.Sleep(40);
 
-                                    Console.Beep(196, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(233, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(175, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(233, 50);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(233, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(175, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(233, 160);
 
                                     Console.WriteLine();
                                     Console.WriteLine();
                                     string defeat = $" You defeated the {enemy.Name}! ";
                                     int length = enemy.Name.Length;
-                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
                                     foreach (char c in defeat)
                                     {
                                         Console.Write(c);
@@ -2232,17 +2215,6 @@ namespace MainGame
                                 }
                             }
                             break;
-                        /*
-                    case ConsoleKey.I:
-                        Combat.DoBattle(mario, enemy);
-                        Console.Clear();
-                        if (enemy.Life <= 0)
-                        {
-                            Console.WriteLine($"\nYou defeated the {enemy.Name}!");
-                            enemiesDefeated++;
-                        }
-                        break;
-                        */
 
                         case ConsoleKey.T:
                             Console.Clear();
@@ -2731,6 +2703,20 @@ namespace MainGame
             Console.WriteLine();
             Console.ResetColor();
 
+            Console.Beep(220, 150);
+            Console.Beep(220, 150);
+            Console.Beep(233, 150);
+            Console.Beep(220, 150);
+            Console.Beep(196, 150);
+            Console.Beep(175, 150);
+            Console.Beep(131, 150);
+            Console.Beep(175, 150);
+            Console.Beep(196, 250);
+            System.Threading.Thread.Sleep(350);
+            Console.Beep(262, 150);
+            Console.Beep(262, 800);
+            System.Threading.Thread.Sleep(400);
+
             string ultra = String.Format("{0, " + 71 + "}", "You acquired the ");
             foreach (char c in ultra)
             {
@@ -2740,6 +2726,7 @@ namespace MainGame
             System.Threading.Thread.Sleep(1000);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("ULTRA JUMP");
+            Console.Beep(208, 900);
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write(",");
             Console.WriteLine();
@@ -2747,6 +2734,7 @@ namespace MainGame
             System.Threading.Thread.Sleep(1000);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write(String.Format("{0, " + 74 + "}", "ULTRA HAMMER"));
+            Console.Beep(233, 900);
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write(",");
             Console.WriteLine();
@@ -2755,6 +2743,7 @@ namespace MainGame
             Console.Write(String.Format("{0, " + 65 + "}", "and "));
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("10 MORE HP!");
+            Console.Beep(208, 262);
             System.Threading.Thread.Sleep(5000);
             Console.ResetColor();
 
@@ -2796,7 +2785,7 @@ namespace MainGame
                 Enemy koopatrol = new Enemy("Koopatrol", 8, 8, 40, 15, "An elite koopa solider with a spike on his helmet.", 4, 4, true, false, false);//1 defense
                 Enemy magikoopa = new Enemy("Magikoopa", 11, 11, 40, 10, "A magician of the koopa clan. Lots of HP!", 3, 3, false, false, false);//could add heal function
                 Enemy hammerBro = new Enemy("Hammer Bro", 12, 12, 40, 20, "This retro punk that wields a hefty hammer.", 5, 5, false, false, false);
-                Enemy billBlaster = new Enemy("Bill Blaster", 4, 4, 30, 10, "A cannon that shoots out bullet bills.", 8, 8, false, false, false);//1 defense
+                Enemy billBlaster = new Enemy("Bill Blaster", 4, 4, 45, 10, "A cannon that shoots out bullet bills.", 8, 8, false, false, false);//1 defense
 
                 Enemy[] enemies =
                 {
@@ -2862,7 +2851,7 @@ namespace MainGame
                     Console.Write($"Enemies Defeated: {enemiesDefeated3} / 7");
                     Console.Write(" ------------------------ ");
                     int numChars = (enemy.Name).Length;
-                    Console.CursorLeft = Console.BufferWidth - (numChars + 13);
+                    Console.CursorLeft = Console.BufferWidth - (numChars + 14);
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write($"{enemy.Name}'s");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -3255,12 +3244,6 @@ namespace MainGame
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " H) ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Ultra Hammer\n");
-                    /*
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write("I) ");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write("Item\n");
-                    */
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " T) ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -3289,7 +3272,7 @@ namespace MainGame
                                 Console.Beep(60, 200);
                                 mario3.Life--;
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 100;
+                                Console.CursorLeft = Console.BufferWidth - 90;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string spiked = " You jumped on a spiked enemy! Mario lost 1 HP. ";
@@ -3309,7 +3292,7 @@ namespace MainGame
                                 Console.Beep(60, 200);
                                 mario3.Life--;
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 100;
+                                Console.CursorLeft = Console.BufferWidth - 83;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string fire = " You jumped on a fire enemy! Mario lost 1 HP. ";
@@ -3333,25 +3316,25 @@ namespace MainGame
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
 
-                                    Console.Beep(233, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(196, 125);
-                                    Console.Beep(175, 63);
-                                    System.Threading.Thread.Sleep(25);
+                                    Console.Beep(233, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(175, 360);
+                                    System.Threading.Thread.Sleep(40);
 
-                                    Console.Beep(196, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(233, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(175, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(233, 50);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(233, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(175, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(233, 160);
 
                                     Console.WriteLine();
                                     Console.WriteLine();
                                     string defeat = $" You defeated the {enemy.Name}! ";
                                     int length = enemy.Name.Length;
-                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
                                     foreach (char c in defeat)
                                     {
                                         Console.Write(c);
@@ -3373,7 +3356,7 @@ namespace MainGame
                             if (enemy.IsAir == true)
                             {
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 105;
+                                Console.CursorLeft = Console.BufferWidth - 92;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string air = " Hammer is ineffective on flying enemies. You missed! ";
@@ -3397,25 +3380,25 @@ namespace MainGame
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
 
-                                    Console.Beep(233, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(196, 125);
-                                    Console.Beep(175, 63);
-                                    System.Threading.Thread.Sleep(25);
+                                    Console.Beep(233, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(175, 360);
+                                    System.Threading.Thread.Sleep(40);
 
-                                    Console.Beep(196, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(233, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(175, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(233, 50);
+                                    Console.Beep(196, 200);
+                                    Console.Beep(220, 200);
+                                    Console.Beep(233, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(175, 160);
+                                    System.Threading.Thread.Sleep(240);
+                                    Console.Beep(233, 160);
 
                                     Console.WriteLine();
                                     Console.WriteLine();
                                     string defeat = $" You defeated the {enemy.Name}! ";
                                     int length = enemy.Name.Length;
-                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
                                     foreach (char c in defeat)
                                     {
                                         Console.Write(c);
@@ -3428,17 +3411,6 @@ namespace MainGame
                                 }
                             }
                             break;
-                        /*
-                    case ConsoleKey.I:
-                        Combat.DoBattle(mario, enemy);
-                        Console.Clear();
-                        if (enemy.Life <= 0)
-                        {
-                            Console.WriteLine($"\nYou defeated the {enemy.Name}!");
-                            enemiesDefeated++;
-                        }
-                        break;
-                        */
 
                         case ConsoleKey.T:
                             Console.Clear();
@@ -3801,6 +3773,21 @@ namespace MainGame
                         Console.WriteLine();
                         Console.WriteLine();
                         Console.WriteLine();
+
+                        Console.Beep(220, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(330, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(294, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(262, 150);
+
                         Console.ForegroundColor = ConsoleColor.White;
                         string gameOver = String.Format("{0, " + 73 + "}", "GAME OVER\n");
                         foreach (char c in gameOver)
@@ -3927,6 +3914,20 @@ namespace MainGame
             Console.WriteLine();
             Console.ResetColor();
 
+            Console.Beep(220, 150);
+            Console.Beep(220, 150);
+            Console.Beep(233, 150);
+            Console.Beep(220, 150);
+            Console.Beep(196, 150);
+            Console.Beep(175, 150);
+            Console.Beep(131, 150);
+            Console.Beep(175, 150);
+            Console.Beep(196, 250);
+            System.Threading.Thread.Sleep(350);
+            Console.Beep(262, 150);
+            Console.Beep(262, 800);
+            System.Threading.Thread.Sleep(400);
+
             string lastLevelUp = String.Format("{0, " + 71 + "}", "You now have ");
             foreach (char c in lastLevelUp)
             {
@@ -3935,7 +3936,10 @@ namespace MainGame
             }
             System.Threading.Thread.Sleep(1000);
             Console.ForegroundColor = ConsoleColor.Red;
+            Console.Beep(208, 900);
+            Console.Beep(233, 900);
             Console.Write("50 HP!");
+            Console.Beep(262, 900);
             System.Threading.Thread.Sleep(5000);
             Console.ResetColor();
 
@@ -4017,25 +4021,16 @@ namespace MainGame
 
             Mario mario4 = new Mario("Mario", 50, 50, 75, 10, marioWeapon);
             bool finalFight = true;
-            int enemiesDefeated4 = 0;
 
             do
             {
                 Enemy bowser0 = new Enemy("Bowser", 25, 25, 30, 0, "The koopa king, and he ain't happy!", 3, 5, false, false, false);
-                Enemy bowser1 = new Enemy("Bowser - Koopa Clown Car", 25, 25, 30, 10, "Oh no! He's in the Koopa Clown Car!", 5, 7, false, true, false);
-                Enemy bowser2 = new Enemy("Bowser - Star Rod", 50, 50, 40, 10, "Great... and now he's got the Star Rod!", 5, 10, false, false, false);
-
-                Enemy[] enemies =
-                {
-                    bowser0, bowser1, bowser2
-                };
-                Enemy enemy = enemies[new Random().Next(enemies.Length)];
-
+                Enemy enemy = bowser0;
                 Console.Clear();
                 Console.ResetColor();
-
                 bool exitEncounter = false;
 
+                #region Phase 1
                 do
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -4046,8 +4041,8 @@ namespace MainGame
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(" Final Battle ");
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write($"Phase: {enemiesDefeated4} / 3");
-                    Console.Write(" --------------------------------- ");
+                    Console.Write($"Phase: 1 / 3");
+                    Console.Write(" ------------------------------------ ");
                     int numChars = (enemy.Name).Length;
                     Console.CursorLeft = Console.BufferWidth - (21);
                     Console.ForegroundColor = ConsoleColor.Yellow;
@@ -4057,231 +4052,79 @@ namespace MainGame
                     Console.WriteLine();
                     Console.CursorVisible = false;
 
-                    if (enemy.Name == "Bowser")
-                    {
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@@@@@@@@*..,***..@@@@@@@@@");//1 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@@@&@.,//***.&&&@/.@@@@@@@");//2 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@#////@@@@@@@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@&@.****/***@*&&**.&@@@@@@");//3 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@..@**////..(((#@@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@&@@@./*****,***/*/*/****/. @");//4 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@/,&#/(#(,,,*%((((@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@%@./**/*/...,....&&%%(... /@@&");//5 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write(".&...&@  @..,.@  /%#@@@@.,#@@@@@@@@");//5
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@&.,.%&#.**,%&%%%.%%%**(,.%@@@@");//6 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("..............,,@   ((.,,*@@.,,@@@@");//6
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@&/,%%%*&**.&&* &&%&&%%%%%%.@@@");//7 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("........#@#...,,.   &(@**/((((#@@@@");//7
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@%@..%%#%%%%&%.,,,*,&%%%%&..@@@");//8 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@,@@@ @@(((,...@/&     @(((.,,,*@@@");//8
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@#@@*,..%%%&.*,,,,,,.&@@@@@@");//9 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@#,*(@....##@///,.&(& ((@***((@.");//9
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@..,****/****,..#@@@@@@@@@@@@");//10 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@#,/,...,@,,,/@***((##&((((((###,");//10
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@%@..&&*.*.***/***.***(@@.&&%.#.@@");//11 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@&#@.,,,@@&@#**///& (((@,,,,,.");//11
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@&,%&&&&&&&&.*.**&%%****&,&&(%#%,@@");//12 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@(**/*/ #*(***@/..%((#  %##%*,.@@,");//12
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@#@.&*&,&&%#.,***,,.****. &&.%&&#@@");//13 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@ @//(@#@ @***//((#(/*@     @###@@@");//13
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@&,(&&&&&&(.***********,&.&&&%,&&@");//14 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("#@@@@@@@@@ @ @(/@@(*****#*....., %&");//14
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@%&@#*.**/*,.******,./**,.&@&%@@@");//15 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@#@,,,,@##/********/@,@@");//15
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@&@.*/*///*/.@./////*///*.&@@@@@");//16 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@%@//**///@.*@*******//(//**");//16
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@#@.*////*/*,&@*.**////,.@&@@@@@");//17 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@..*/%@ @(/&*/////((*@@@@");//17
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@#@##..,.,@(@%%&&&@&&@&&@@@@@@@");//18 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@ .@@@@@@@&@@@@@");//18
-                    }
-                    else if (enemy.Name == "Bowser - Koopa Clown Car")
-                    {
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@@@@@@@@*..,***..@@@@@@@@@");//1 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@@@&@.,//***.&&&@/.@@@@@@@");//2 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@#..@,.@@@@@@@@@@@");//2
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@&@.****/***@*&&**.&@@@@@@");//3 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@.#/,,,,,,/.@.@@@@@@@@@");//3
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@&@@@./*****,***/*/*/****/. @");//4 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@/#//******/.#(@@@@@@@@@");//4
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@%@./**/*/...,....&&%%(... /@@&");//5 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@%@@..*&..**.@&*,,@@@@@@@@@");//5
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@&.,.%&#.**,%&%%%.%%%**(,.%@@@@");//6 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@,#/&&&&%(&&&&&&&&&,,##@@@@");//6
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@&/,%%%*&**.&&* &&%&&%%%%%%.@@@");//7 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@,,&/*&*%&&%%&&%%(&%/,(@.@@@@");//7
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@%@..%%#%%%%&%.,,,*,&%%%%&..@@@");//8 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@#,,**,&.,,..,,#%,/(,(,@#@@@");//8
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@#@@*,..%%%&.*,,,,,,.&@@@@@@");//9 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@.(((((*%*.,./,%,((#(./*@@@@");//9
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@..,****/****,..#@@@@@@@@@@@@");//10 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@.**@,/*,%#%,%#%,,%&*((****@@");//10
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@%@..&&*.*.***/***.***(@@.&&%.#.@@");//11 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@*&@#.,*************,.*&.@@@");//11
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@&,%&&&&&&&&.*.**&%%****&,&&(%#%,@@");//12 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@/&@@@,#/@@@@@@@@%##@/@@&#@@@");//12
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@#@.&*&,&&%#.,***,,.****. &&.%&&#@@");//13 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@(@@@@@@&@@@@@@@@@@@@@@@&(@@@");//13
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@&,(&&&&&&(.***********,&.&&&%,&&@");//14 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@.//////,&@@@@(.(//////&/@@@");//14
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@%&@#*.**/*,.******,./**,.&@&%@@@");//15 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@#///.//////(((/.////.@@@@@");//15
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@&@.*/*///*/.@./////*///*.&@@@@@");//16 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@&.//(/(/////(./@@@@@@@@");//16
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@#@.*////*/*,&@*.**////,.@&@@@@@");//17 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@#.,*,.**.****,/@@@@@@@@");//17
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@#@##..,.,@(@%%&&&@&&@&&@@@@@@@");//18 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//18
-                    }
-                    else
-                    {//star rod
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@@@@@@@@*..,***..@@@@@@@@@");//1 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@@@&@.,//***.&&&@/.@@@@@@@");//2 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@@@&@.****/***@*&&**.&@@@@@@");//3 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@&@@@./*****,***/*/*/****/. @");//4 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@%@./**/*/...,....&&%%(... /@@&");//5 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@&@&@@@@@@@@@@@/%///%@@@@@@@@@@");//5
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@&.,.%&#.**,%&%%%.%%%**(,.%@@@@");//6 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@*****&&@%@@@%(%@((((@@&@/*...@");//6
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@&/,%%%*&**.&&* &&%&&%%%%%%.@@@");//7 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@(**% #/*//@,*%.&##% .&/,/@&(@*@@");//7
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@%@..%%#%%%%&%.,,,*,&%%%%&..@@@");//8 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@&@#.//*./@%,,,,,,,,,,,,@@@@/.&@@");//8
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@@@#@@*,..%%%&.*,,,,,,.&@@@@@@");//9 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@&&&/#(((&/,,/**##*,,(,,&&@@@@@@");//9
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@@*@#*/*( ##,##/(&(,%**/%***&@@");//10 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@& ,***,**%%*,,**%@&&@&@@&&*,&@@@@");//10
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@%@..&&*.*.***/***.***(@@.&&%.#.@@");//11 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@%#@.@****,,,,,,,/#.% #&/**&@@");//11
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@&,%&&&&&&&&.*.**&%%****&,&&(%#%,@@");//12 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@,#(.@**/..,.. ...@@%/@@&@#@@@@");//12
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@#@.&*&,&&%#.,***,,.****. &&.%&&#@@");//13 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@*&@/*****@.........@@@@@@@@@@@@@");//13
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@&,(&&&&&&(.***********,&.&&&%,&&@");//14 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@(*&/*****//.......,@**&@@@@@@@@@@");//14
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@%&@#*.**/*,.******,./**,.&@&%@@@");//15 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@//****/.,,,,.*****&@@@@@@@@@@@");//15
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@&@.*/*///*/.@./////*///*.&@@@@@");//16 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@&/****//&@@@@@//**/***&@@@@@@@@@");//16
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@#@.*////*/*,&@*.**////,.@&@@@@@");//17 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@. .#/*&&@@@@@@@@&&@*,&@@@@@@@@@@");//17
-                        Console.CursorLeft = Console.BufferWidth - 130;
-                        Console.Write("@@@@@#@##..,.,@(@%%&&&@&&@&&@@@@@@@");//18 M
-                        Console.CursorLeft = Console.BufferWidth - 35;
-                        Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//18
-                    }
+                    //Display Phase 1 Boss
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@@@@@@@@*..,***..@@@@@@@@@");//1 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@@@&@.,//***.&&&@/.@@@@@@@");//2 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@#////@@@@@@@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@&@.****/***@*&&**.&@@@@@@");//3 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@..@**////..(((#@@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@&@@@./*****,***/*/*/****/. @");//4 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@/,&#/(#(,,,*%((((@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@%@./**/*/...,....&&%%(... /@@&");//5 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write(".&...&@  @..,.@  /%#@@@@.,#@@@@@@@@");//5
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@&.,.%&#.**,%&%%%.%%%**(,.%@@@@");//6 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("..............,,@   ((.,,*@@.,,@@@@");//6
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@&/,%%%*&**.&&* &&%&&%%%%%%.@@@");//7 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("........#@#...,,.   &(@**/((((#@@@@");//7
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@%@..%%#%%%%&%.,,,*,&%%%%&..@@@");//8 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@,@@@ @@(((,...@/&     @(((.,,,*@@@");//8
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@#@@*,..%%%&.*,,,,,,.&@@@@@@");//9 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@#,*(@....##@///,.&(& ((@***((@.");//9
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@..,****/****,..#@@@@@@@@@@@@");//10 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@#,/,...,@,,,/@***((##&((((((###,");//10
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@%@..&&*.*.***/***.***(@@.&&%.#.@@");//11 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@&#@.,,,@@&@#**///& (((@,,,,,.");//11
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@&,%&&&&&&&&.*.**&%%****&,&&(%#%,@@");//12 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@(**/*/ #*(***@/..%((#  %##%*,.@@,");//12
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@#@.&*&,&&%#.,***,,.****. &&.%&&#@@");//13 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@ @//(@#@ @***//((#(/*@     @###@@@");//13
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@&,(&&&&&&(.***********,&.&&&%,&&@");//14 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("#@@@@@@@@@ @ @(/@@(*****#*....., %&");//14
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@%&@#*.**/*,.******,./**,.&@&%@@@");//15 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@#@,,,,@##/********/@,@@");//15
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@&@.*/*///*/.@./////*///*.&@@@@@");//16 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@%@//**///@.*@*******//(//**");//16
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@#@.*////*/*,&@*.**////,.@&@@@@@");//17 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@..*/%@ @(/&*/////((*@@@@");//17
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@#@##..,.,@(@%%&&&@&&@&&@@@@@@@");//18 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@ .@@@@@@@&@@@@@");//18
 
                     Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -4292,12 +4135,6 @@ namespace MainGame
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " H) ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Ultra Hammer\n");
-                    /*
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write("I) ");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write("Item\n");
-                    */
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " T) ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -4311,7 +4148,7 @@ namespace MainGame
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Quit Game");
 
-                    ConsoleKey userChoice = Console.ReadKey(true).Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                    ConsoleKey userChoice = Console.ReadKey(true).Key;
 
 
                     switch (userChoice)
@@ -4320,85 +4157,27 @@ namespace MainGame
                             marioWeapon = weapon4;
                             Console.Beep(100, 150);
                             Console.Beep(250, 150);
-                            if (enemy.IsSpiked == true)
+                            Combat.DoBattle(mario4, enemy);
+                            if (enemy.Life <= 0)
                             {
+                                //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
+                                Console.ForegroundColor = ConsoleColor.Black;
+                                Console.BackgroundColor = ConsoleColor.Yellow;
                                 System.Threading.Thread.Sleep(1000);
-                                Console.Beep(60, 200);
-                                mario4.Life--;
+
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 100;
-                                Console.BackgroundColor = ConsoleColor.White;
-                                Console.ForegroundColor = ConsoleColor.DarkRed;
-                                string spiked = " You jumped on a spiked enemy! Mario lost 1 HP. ";
-                                foreach (char c in spiked)
+                                Console.WriteLine();
+                                string defeat = $" You completed Phase 1! ";
+                                int length = enemy.Name.Length;
+                                Console.CursorLeft = Console.BufferWidth - (length + 70);
+                                foreach (char c in defeat)
                                 {
                                     Console.Write(c);
-                                    System.Threading.Thread.Sleep(20);
+                                    System.Threading.Thread.Sleep(5);
                                 }
                                 System.Threading.Thread.Sleep(2000);
+                                exitEncounter = true;
                                 Console.ResetColor();
-                                Combat.DoAttack(enemy, mario4);
-                                System.Threading.Thread.Sleep(2000);
-                            }
-                            else if (enemy.IsFire == true)
-                            {
-                                System.Threading.Thread.Sleep(1000);
-                                Console.Beep(60, 200);
-                                mario4.Life--;
-                                Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 100;
-                                Console.BackgroundColor = ConsoleColor.White;
-                                Console.ForegroundColor = ConsoleColor.DarkRed;
-                                string fire = " You jumped on a fire enemy! Mario lost 1 HP. ";
-                                foreach (char c in fire)
-                                {
-                                    Console.Write(c);
-                                    System.Threading.Thread.Sleep(20);
-                                }
-                                System.Threading.Thread.Sleep(2000);
-                                Console.ResetColor();
-                                Combat.DoAttack(enemy, mario4);
-                                System.Threading.Thread.Sleep(2000);
-                            }
-                            else
-                            {
-                                Combat.DoBattle(mario4, enemy);
-                                if (enemy.Life <= 0)
-                                {
-                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
-                                    Console.ForegroundColor = ConsoleColor.Black;
-                                    Console.BackgroundColor = ConsoleColor.Yellow;
-                                    System.Threading.Thread.Sleep(1000);
-
-                                    Console.Beep(233, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(196, 125);
-                                    Console.Beep(175, 63);
-                                    System.Threading.Thread.Sleep(25);
-
-                                    Console.Beep(196, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(233, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(175, 50);
-                                    enemiesDefeated4++;
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(233, 50);
-
-                                    Console.WriteLine();
-                                    Console.WriteLine();
-                                    string defeat = $" You completed phase {enemiesDefeated4}! ";
-                                    int length = enemy.Name.Length;
-                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
-                                    foreach (char c in defeat)
-                                    {
-                                        Console.Write(c);
-                                        System.Threading.Thread.Sleep(5);
-                                    }
-                                    System.Threading.Thread.Sleep(2000);
-                                    exitEncounter = true;
-                                    Console.ResetColor();
-                                }
                             }
                             break;
 
@@ -4410,7 +4189,7 @@ namespace MainGame
                             if (enemy.IsAir == true)
                             {
                                 Console.WriteLine();
-                                Console.CursorLeft = Console.BufferWidth - 105;
+                                Console.CursorLeft = Console.BufferWidth - 92;
                                 Console.BackgroundColor = ConsoleColor.White;
                                 Console.ForegroundColor = ConsoleColor.DarkRed;
                                 string air = " Hammer is ineffective on flying enemies. You missed! ";
@@ -4434,26 +4213,11 @@ namespace MainGame
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
 
-                                    Console.Beep(233, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(196, 125);
-                                    Console.Beep(175, 63);
-                                    System.Threading.Thread.Sleep(25);
-
-                                    Console.Beep(196, 125);
-                                    Console.Beep(220, 125);
-                                    Console.Beep(233, 50);
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(175, 50);
-                                    enemiesDefeated4++;
-                                    System.Threading.Thread.Sleep(75);
-                                    Console.Beep(233, 50);
-
                                     Console.WriteLine();
                                     Console.WriteLine();
-                                    string defeat = $" You completed phase {enemiesDefeated4}! ";
+                                    string defeat = $" You completed Phase 1! ";
                                     int length = enemy.Name.Length;
-                                    Console.CursorLeft = Console.BufferWidth - (length + 68);
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
                                     foreach (char c in defeat)
                                     {
                                         Console.Write(c);
@@ -4465,139 +4229,47 @@ namespace MainGame
                                 }
                             }
                             break;
-                        /*
-                    case ConsoleKey.I:
-                        Combat.DoBattle(mario, enemy);
-                        Console.Clear();
-                        if (enemy.Life <= 0)
-                        {
-                            Console.WriteLine($"\nYou defeated the {enemy.Name}!");
-                            enemiesDefeated++;
-                        }
-                        break;
-                        */
 
                         case ConsoleKey.T:
                             Console.Clear();
                             Console.WriteLine();
                             Console.WriteLine();
-                            if (enemy.Name == "Bowser")
-                            {
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("___________________________________");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@#////@@@@@@@@@@@@@@@@@@@@@|");//2
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@..@**////..(((#@@@@@@@@@@@@@@@@|");//3
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@/,&#/(#(,,,*%((((@@@@@@@@@@@@@@@|");//4
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|&...&@  @..,.@  /%#@@@@.,#@@@@@@@|");//5
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|.............,,@   ((.,,*@@.,,@@@|");//6
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|.......#@#...,,.   &(@**/((((#@@@|");//7
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|,@@@ @@(((,...@/&     @(((.,,,*@@|");//8
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@#,*(@....##@///,.&(& ((@***((@|");//9
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@#,/,...,@,,,/@***((##&((((((###|");//10
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@&#@.,,,@@&@#**///& (((@,,,,,|");//11
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@(**/*/ #*(***@/..%((#  %##%*,.@@|");//12
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("| @//(@#@ @***//((#(/*@     @###@@|");//13
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@@ @ @(/@@(*****#*....., %|");//14
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@%@//**///@.*@*******//(//*|");//15
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@@@..*/%@ @(/&*/////((*@@@|");//16
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@@@@@@@@@@@@ .@@@@@@@&@@@@|");//17
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("___________________________________");//18
-                            }
-                            else if (enemy.Name == "Bowser - Koopa Clown Car")//
-                            {
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("___________________________________");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@@@@@@@@@@#..@,.@@@@@@@@@@|");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@@@@@.#/,,,,,,/.@.@@@@@@@@|");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@@@@/#//******/.#(@@@@@@@@|");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@%@@..*&..**.@&*,,@@@@@@@@|");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@,#/&&&&%(&&&&&&&&&,,##@@@|");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@,,&/*&*%&&%%&&%%(&%/,(@.@@@|");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@#,,**,&.,,..,,#%,/(,(,@#@@|");//8
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@.(((((*%*.,./,%,((#(./*@@@|");//9
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@.**@,/*,%#%,%#%,,%&*((****@|");//10
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@*&@#.,*************,.*&.@@|");//11
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@/&@@@,#/@@@@@@@@%##@/@@&#@@|");//12
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@(@@@@@@&@@@@@@@@@@@@@@@&(@@|");//13
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@.//////,&@@@@(.(//////&/@@|");//14
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@#///.//////(((/.////.@@@@|");//15
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@@@@&.//(/(/////(./@@@@@@@|");//16
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("|@@@@@@@@@@@#.,*,.**.****,/@@@@@@@|");//17
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("___________________________________");//18
-                            }
-                            else
-                            {// Bowser - Star Rod
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("___________________________________");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@&@&@@@@@@@@@@@/%///%@@@@@@@@@@");//5
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@*****&&@%@@@%(%@((((@@&@/*...@");//6
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@(**% #/*//@,*%.&##% .&/,/@&(@*@@");//7
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@&@#.//*./@%,,,,,,,,,,,,@@@@/.&@@");//8
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@&&&/#(((&/,,/**##*,,(,,&&@@@@@@");//9
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@@*@#*/*( ##,##/(&(,%**/%***&@@");//10
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@@%#@.@****,,,,,,,/#.% #&/**&@@");//11
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@,#(.@**/..,.. ...@@%/@@&@#@@@@");//12
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@*&@/*****@.........@@@@@@@@@@@@@");//13
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@(*&/*****//.......,@**&@@@@@@@@@@");//14
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@@@//****/.,,,,.*****&@@@@@@@@@@@");//15
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@&/****//&@@@@@//**/***&@@@@@@@@@");//16
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("@@@. .#/*&&@@@@@@@@&&@*,&@@@@@@@@@@");//17
-                                Console.CursorLeft = Console.BufferWidth - 82;
-                                Console.WriteLine("___________________________________");//18
-                            }
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("___________________________________");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@#////@@@@@@@@@@@@@@@@@@@@@|");//2
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@..@**////..(((#@@@@@@@@@@@@@@@@|");//3
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@/,&#/(#(,,,*%((((@@@@@@@@@@@@@@@|");//4
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|&...&@  @..,.@  /%#@@@@.,#@@@@@@@|");//5
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|.............,,@   ((.,,*@@.,,@@@|");//6
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|.......#@#...,,.   &(@**/((((#@@@|");//7
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|,@@@ @@(((,...@/&     @(((.,,,*@@|");//8
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@#,*(@....##@///,.&(& ((@***((@|");//9
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@#,/,...,@,,,/@***((##&((((((###|");//10
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@&#@.,,,@@&@#**///& (((@,,,,,|");//11
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@(**/*/ #*(***@/..%((#  %##%*,.@@|");//12
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("| @//(@#@ @***//((#(/*@     @###@@|");//13
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@@ @ @(/@@(*****#*....., %|");//14
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@%@//**///@.*@*******//(//*|");//15
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@@@..*/%@ @(/&*/////((*@@@|");//16
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@@@@@@@@@@@@ .@@@@@@@&@@@@|");//17
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("___________________________________");//18
 
                             Console.WriteLine();
                             Console.BackgroundColor = ConsoleColor.Yellow;
@@ -4759,6 +4431,29 @@ namespace MainGame
                         Console.WriteLine();
                         Console.WriteLine();
                         Console.WriteLine();
+
+                        Console.Beep(220, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(330, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(294, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(262, 150);
+
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
                         Console.ForegroundColor = ConsoleColor.White;
                         string gameOver = String.Format("{0, " + 73 + "}", "GAME OVER\n");
                         foreach (char c in gameOver)
@@ -4778,7 +4473,7 @@ namespace MainGame
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("waves and defeated");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write("21");
+                        Console.Write(" 21 ");
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("enemies!");
 
@@ -4793,6 +4488,7 @@ namespace MainGame
                             Console.Write(c);
                             System.Threading.Thread.Sleep(40);
                         }
+                        System.Threading.Thread.Sleep(1000);
                         Console.WriteLine();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write(String.Format("{0, " + 63 + "}", "Y) "));
@@ -4809,8 +4505,7 @@ namespace MainGame
                         switch (exitChoice)
                         {
                             case ConsoleKey.Y:
-                                mario4.Life = 10;
-                                enemiesDefeated4 = 0;
+                                mario4.Life = 50;
                                 Console.Clear();
                                 break;
                             case ConsoleKey.N:
@@ -4847,8 +4542,1070 @@ namespace MainGame
                     Console.Clear();
 
                 } while (finalFight && !exitEncounter);
-            } while (finalFight && enemiesDefeated4 < 3);
+                #endregion
 
+                #region Phase 2
+
+                Enemy bowser1 = new Enemy("Bowser", 25, 25, 30, 10, "Oh no! He's in the Koopa Clown Car!", 5, 7, false, true, false);
+                enemy = bowser1;
+                exitEncounter = false;
+                do
+                {
+                    Console.ResetColor();
+
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write($" Mario's ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write($"HP: {mario4.Life} / {mario4.MaxLife} ");
+                    Console.Write("---------------------------------");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Write(" Final Battle ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write($"Phase: 2 / 3");
+                    Console.Write(" ------------------------------------ ");
+                    int numChars = (enemy.Name).Length;
+                    Console.CursorLeft = Console.BufferWidth - (21);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write($"Bowser's");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write($" HP: {enemy.Life} / {enemy.MaxLife} ");
+                    Console.WriteLine();
+                    Console.CursorVisible = false;
+
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@@@@@@@@*..,***..@@@@@@@@@");//1 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@@@&@.,//***.&&&@/.@@@@@@@");//2 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@#..@,.@@@@@@@@@@@");//2
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@&@.****/***@*&&**.&@@@@@@");//3 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@.#/,,,,,,/.@.@@@@@@@@@");//3
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@&@@@./*****,***/*/*/****/. @");//4 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@/#//******/.#(@@@@@@@@@");//4
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@%@./**/*/...,....&&%%(... /@@&");//5 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@%@@..*&..**.@&*,,@@@@@@@@@");//5
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@&.,.%&#.**,%&%%%.%%%**(,.%@@@@");//6 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@,#/&&&&%(&&&&&&&&&,,##@@@@");//6
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@&/,%%%*&**.&&* &&%&&%%%%%%.@@@");//7 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@,,&/*&*%&&%%&&%%(&%/,(@.@@@@");//7
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@%@..%%#%%%%&%.,,,*,&%%%%&..@@@");//8 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@#,,**,&.,,..,,#%,/(,(,@#@@@");//8
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@#@@*,..%%%&.*,,,,,,.&@@@@@@");//9 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@.(((((*%*.,./,%,((#(./*@@@@");//9
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@..,****/****,..#@@@@@@@@@@@@");//10 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@.**@,/*,%#%,%#%,,%&*((****@@");//10
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@%@..&&*.*.***/***.***(@@.&&%.#.@@");//11 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@*&@#.,*************,.*&.@@@");//11
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@&,%&&&&&&&&.*.**&%%****&,&&(%#%,@@");//12 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@/&@@@,#/@@@@@@@@%##@/@@&#@@@");//12
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@#@.&*&,&&%#.,***,,.****. &&.%&&#@@");//13 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@(@@@@@@&@@@@@@@@@@@@@@@&(@@@");//13
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@&,(&&&&&&(.***********,&.&&&%,&&@");//14 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@.//////,&@@@@(.(//////&/@@@");//14
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@%&@#*.**/*,.******,./**,.&@&%@@@");//15 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@#///.//////(((/.////.@@@@@");//15
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@&@.*/*///*/.@./////*///*.&@@@@@");//16 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@&.//(/(/////(./@@@@@@@@");//16
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@#@.*////*/*,&@*.**////,.@&@@@@@");//17 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@#.,*,.**.****,/@@@@@@@@");//17
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@#@##..,.,@(@%%&&&@&&@&&@@@@@@@");//18 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//18
+
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " J) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Ultra Jump\n");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " H) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Ultra Hammer\n");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " T) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Tattle\n");
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " F) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Flee\n");
+                    Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " Esc) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Quit Game");
+
+                    ConsoleKey userChoice = Console.ReadKey(true).Key;
+
+
+                    switch (userChoice)
+                    {
+                        case ConsoleKey.J:
+                            marioWeapon = weapon4;
+                            Console.Beep(100, 150);
+                            Console.Beep(250, 150);
+                            Combat.DoBattle(mario4, enemy);
+                            if (enemy.Life <= 0)
+                            {
+                                //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
+                                Console.ForegroundColor = ConsoleColor.Black;
+                                Console.BackgroundColor = ConsoleColor.Yellow;
+                                System.Threading.Thread.Sleep(1000);
+
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                string defeat = $" You completed Phase 2! ";
+                                int length = enemy.Name.Length;
+                                Console.CursorLeft = Console.BufferWidth - (length + 70);
+                                foreach (char c in defeat)
+                                {
+                                    Console.Write(c);
+                                    System.Threading.Thread.Sleep(5);
+                                }
+                                System.Threading.Thread.Sleep(2000);
+                                exitEncounter = true;
+                                Console.ResetColor();
+                            }
+                            break;
+
+                        case ConsoleKey.H:
+                            marioWeapon = weapon5;
+                            Console.Beep(200, 500);
+                            System.Threading.Thread.Sleep(400);
+                            Console.Beep(70, 100);
+                            if (enemy.IsAir == true)
+                            {
+                                Console.WriteLine();
+                                Console.CursorLeft = Console.BufferWidth - 92;
+                                Console.BackgroundColor = ConsoleColor.White;
+                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                string air = " Hammer is ineffective on flying enemies. You missed! ";
+                                foreach (char c in air)
+                                {
+                                    Console.Write(c);
+                                    System.Threading.Thread.Sleep(20);
+                                }
+                                System.Threading.Thread.Sleep(2000);
+                                Console.ResetColor();
+                                Combat.DoAttack(enemy, mario4);
+                                System.Threading.Thread.Sleep(2000);
+                            }
+                            else
+                            {
+                                Combat.DoBattle(mario4, enemy);
+                                if (enemy.Life <= 0)
+                                {
+                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
+                                    Console.ForegroundColor = ConsoleColor.Black;
+                                    Console.BackgroundColor = ConsoleColor.Yellow;
+                                    System.Threading.Thread.Sleep(1000);
+
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    string defeat = $" You completed Phase 2! ";
+                                    int length = enemy.Name.Length;
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
+                                    foreach (char c in defeat)
+                                    {
+                                        Console.Write(c);
+                                        System.Threading.Thread.Sleep(5);
+                                    }
+                                    System.Threading.Thread.Sleep(2000);
+                                    exitEncounter = true;
+                                    Console.ResetColor();
+                                }
+                            }
+                            break;
+
+                        case ConsoleKey.T:
+                            Console.Clear();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("___________________________________");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@@@@@@@@@@#..@,.@@@@@@@@@@|");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@@@@@.#/,,,,,,/.@.@@@@@@@@|");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@@@@/#//******/.#(@@@@@@@@|");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@%@@..*&..**.@&*,,@@@@@@@@|");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@,#/&&&&%(&&&&&&&&&,,##@@@|");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@,,&/*&*%&&%%&&%%(&%/,(@.@@@|");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@#,,**,&.,,..,,#%,/(,(,@#@@|");//8
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@.(((((*%*.,./,%,((#(./*@@@|");//9
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@.**@,/*,%#%,%#%,,%&*((****@|");//10
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@*&@#.,*************,.*&.@@|");//11
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@/&@@@,#/@@@@@@@@%##@/@@&#@@|");//12
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@(@@@@@@&@@@@@@@@@@@@@@@&(@@|");//13
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@.//////,&@@@@(.(//////&/@@|");//14
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@#///.//////(((/.////.@@@@|");//15
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@@@@&.//(/(/////(./@@@@@@@|");//16
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("|@@@@@@@@@@@#.,*,.**.****,/@@@@@@@|");//17
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("___________________________________");//18
+
+                            Console.WriteLine();
+                            Console.BackgroundColor = ConsoleColor.Yellow;
+                            Console.ForegroundColor = ConsoleColor.Black;
+                            int nameLength = enemy.Name.Length;
+                            int normalizedName = ((nameLength - 5) / (12));
+                            Console.CursorLeft = Console.BufferWidth - (72 + normalizedName);
+                            Console.WriteLine(" " + " " + enemy.Name + " " + " ");
+                            Console.WriteLine();
+                            Console.ResetColor();
+
+                            int descriptionLength = enemy.Description.Length;
+                            int normalized = ((descriptionLength - 10) / (32));
+                            Console.CursorLeft = Console.BufferWidth - (80 + normalized);
+                            Console.Write("\"" + $"{enemy.Description}" + "\"");
+
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 68;
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            Console.Write("HP: ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write($"{enemy.MaxLife}");
+
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 72;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.Write("Attack Power: ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write($"{enemy.MaxDamage}");
+
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 71;
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.Write("Accuracy: ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write($"{enemy.HitChance}%");
+
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 70;
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.Write("Evasion: ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write($"{enemy.Block}%");
+
+                            bool leaveStats = false;
+                            do
+                            {
+                                ConsoleKey space = Console.ReadKey(true).Key;
+                                switch (space)
+                                {
+                                    case ConsoleKey.Spacebar:
+                                        leaveStats = true;
+                                        break;
+                                }
+
+                            } while (!leaveStats);
+                            break;
+
+                        case ConsoleKey.F:
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 95;
+                            Console.BackgroundColor = ConsoleColor.White;
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            string flee = $" Fleeing is not an option in this fight! ";
+                            foreach (char c in flee)
+                            {
+                                Console.Write(c);
+                                System.Threading.Thread.Sleep(20);
+                            }
+                            System.Threading.Thread.Sleep(500);
+                            Console.ResetColor();
+                            Combat.DoAttack(enemy, mario4);
+                            System.Threading.Thread.Sleep(3000);
+                            break;
+
+                        case ConsoleKey.Escape:
+                            Console.Clear();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            string really = String.Format("{0, " + 69 + "}", ". . .");
+                            foreach (char c in really)
+                            {
+                                Console.Write(c);
+                                System.Threading.Thread.Sleep(80);
+                            }
+                            Console.Clear();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            string leave = String.Format("{0, " + 84 + "}", "Are you sure you want to leave?\n");
+                            foreach (char c in leave)
+                            {
+                                Console.Write(c);
+                                System.Threading.Thread.Sleep(40);
+                            }
+
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.Write(String.Format("{0, " + 58 + "}", "Y) "));
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write("Yes, I want to leave.\n");
+                            Console.WriteLine();
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.Write(String.Format("{0, " + 56 + "}", "N) "));
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write("No! I want to keep playing!");
+                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+
+                            switch (exitChoice)
+                            {
+                                case ConsoleKey.Y:
+                                    Console.Clear();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.BackgroundColor = ConsoleColor.White;
+                                    Console.ForegroundColor = ConsoleColor.Black;
+                                    string thanks = String.Format("{0, " + 84 + "}", "Thank you for playing my game!");
+                                    foreach (char c in thanks)
+                                    {
+                                        Console.Write(c);
+                                        System.Threading.Thread.Sleep(40);
+                                    }
+                                    System.Threading.Thread.Sleep(3000);
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Environment.Exit(0);
+                                    break;
+                                case ConsoleKey.N:
+                                    break;
+                            }
+                            break;
+
+                    }
+                    if (mario4.Life <= 0)
+                    {
+                        System.Threading.Thread.Sleep(1500);
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+
+                        Console.Beep(220, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(330, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(294, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(262, 150);
+
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.White;
+                        string gameOver = String.Format("{0, " + 73 + "}", "GAME OVER\n");
+                        foreach (char c in gameOver)
+                        {
+                            Console.Write(c);
+                            System.Threading.Thread.Sleep(80);
+                        }
+                        System.Threading.Thread.Sleep(3000);
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        string stats = String.Format("{0, " + 57 + "}", $"You completed");
+                        Console.Write(stats);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write(" 3 ");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("waves and defeated");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write(" 21 ");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("enemies!");
+
+
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.White;
+                        string leave = String.Format("{0, " + 82 + "}", "Would you like to try again?\n");
+                        foreach (char c in leave)
+                        {
+                            Console.Write(c);
+                            System.Threading.Thread.Sleep(40);
+                        }
+                        System.Threading.Thread.Sleep(1000);
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write(String.Format("{0, " + 63 + "}", "Y) "));
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("Count me in!\n");
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write(String.Format("{0, " + 56 + "}", "N) "));
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("No, I think I've had enough.");
+
+                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+
+                        switch (exitChoice)
+                        {
+                            case ConsoleKey.Y:
+                                mario4.Life = 50;
+                                Console.Clear();
+                                break;
+                            case ConsoleKey.N:
+                                Console.Clear();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.BackgroundColor = ConsoleColor.White;
+                                Console.ForegroundColor = ConsoleColor.Black;
+                                string thanks = String.Format("{0, " + 84 + "}", "Thank you for playing my game!");
+                                foreach (char c in thanks)
+                                {
+                                    Console.Write(c);
+                                    System.Threading.Thread.Sleep(40);
+                                }
+                                System.Threading.Thread.Sleep(3000);
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Environment.Exit(0);
+                                break;
+                            default:
+                                Console.Clear();
+                                break;
+                        }
+                        break;
+
+                    }
+
+                    Console.Clear();
+
+                } while (finalFight && !exitEncounter);
+                #endregion
+
+                #region Phase 3
+
+
+                Enemy bowser2 = new Enemy("Bowser", 50, 50, 40, 10, "Great... and now he's got the Star Rod!", 5, 10, false, false, false);
+                enemy = bowser2;
+                Console.ResetColor();
+                exitEncounter = false;
+                do
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write($" Mario's ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write($"HP: {mario4.Life} / {mario4.MaxLife} ");
+                    Console.Write("---------------------------------");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Write(" Final Battle ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write($"Phase: 3 / 3");
+                    Console.Write(" ------------------------------------ ");
+                    int numChars = (enemy.Name).Length;
+                    Console.CursorLeft = Console.BufferWidth - (21);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write($"Bowser's");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write($" HP: {enemy.Life} / {enemy.MaxLife} ");
+                    Console.WriteLine();
+                    Console.CursorVisible = false;
+
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@@@@@@@@*..,***..@@@@@@@@@");//1 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@@@&@.,//***.&&&@/.@@@@@@@");//2 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@@@&@.****/***@*&&**.&@@@@@@");//3 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@&@@@./*****,***/*/*/****/. @");//4 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@%@./**/*/...,....&&%%(... /@@&");//5 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@&@&@@@@@@@@@@@/%///%@@@@@@@@@@");//5
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@&.,.%&#.**,%&%%%.%%%**(,.%@@@@");//6 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@*****&&@%@@@%(%@((((@@&@/*...@");//6
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@&/,%%%*&**.&&* &&%&&%%%%%%.@@@");//7 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@(**% #/*//@,*%.&##% .&/,/@&(@*@@");//7
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@%@..%%#%%%%&%.,,,*,&%%%%&..@@@");//8 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@&@#.//*./@%,,,,,,,,,,,,@@@@/.&@@");//8
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@@@#@@*,..%%%&.*,,,,,,.&@@@@@@");//9 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@&&&/#(((&/,,/**##*,,(,,&&@@@@@@");//9
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@@*@#*/*( ##,##/(&(,%**/%***&@@");//10 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@& ,***,**%%*,,**%@&&@&@@&&*,&@@@@");//10
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@%@..&&*.*.***/***.***(@@.&&%.#.@@");//11 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@%#@.@****,,,,,,,/#.% #&/**&@@");//11
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@&,%&&&&&&&&.*.**&%%****&,&&(%#%,@@");//12 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@,#(.@**/..,.. ...@@%/@@&@#@@@@");//12
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@#@.&*&,&&%#.,***,,.****. &&.%&&#@@");//13 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@*&@/*****@.........@@@@@@@@@@@@@");//13
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@&,(&&&&&&(.***********,&.&&&%,&&@");//14 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@(*&/*****//.......,@**&@@@@@@@@@@");//14
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@%&@#*.**/*,.******,./**,.&@&%@@@");//15 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@//****/.,,,,.*****&@@@@@@@@@@@");//15
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@&@.*/*///*/.@./////*///*.&@@@@@");//16 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@&/****//&@@@@@//**/***&@@@@@@@@@");//16
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@#@.*////*/*,&@*.**////,.@&@@@@@");//17 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@. .#/*&&@@@@@@@@&&@*,&@@@@@@@@@@");//17
+                    Console.CursorLeft = Console.BufferWidth - 130;
+                    Console.Write("@@@@@#@##..,.,@(@%%&&&@&&@&&@@@@@@@");//18 M
+                    Console.CursorLeft = Console.BufferWidth - 35;
+                    Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//18
+
+
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " J) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Ultra Jump\n");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " H) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Ultra Hammer\n");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " T) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Tattle\n");
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " F) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Flee\n");
+                    Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " Esc) ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("Quit Game");
+
+                    ConsoleKey userChoice = Console.ReadKey(true).Key;
+
+
+                    switch (userChoice)
+                    {
+                        case ConsoleKey.J:
+                            marioWeapon = weapon4;
+                            Console.Beep(100, 150);
+                            Console.Beep(250, 150);
+                            Combat.DoBattle(mario4, enemy);
+                            if (enemy.Life <= 0)
+                            {
+                                //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
+                                Console.ForegroundColor = ConsoleColor.Black;
+                                Console.BackgroundColor = ConsoleColor.Yellow;
+                                System.Threading.Thread.Sleep(1000);
+
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                string defeat = $" You completed Phase 3! ";
+                                int length = enemy.Name.Length;
+                                Console.CursorLeft = Console.BufferWidth - (length + 70);
+                                foreach (char c in defeat)
+                                {
+                                    Console.Write(c);
+                                    System.Threading.Thread.Sleep(5);
+                                }
+                                System.Threading.Thread.Sleep(2000);
+                                exitEncounter = true;
+                                Console.ResetColor();
+                            }
+                            break;
+
+                        case ConsoleKey.H:
+                            marioWeapon = weapon5;
+                            Console.Beep(200, 500);
+                            System.Threading.Thread.Sleep(400);
+                            Console.Beep(70, 100);
+                            if (enemy.IsAir == true)
+                            {
+                                Console.WriteLine();
+                                Console.CursorLeft = Console.BufferWidth - 92;
+                                Console.BackgroundColor = ConsoleColor.White;
+                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                string air = " Hammer is ineffective on flying enemies. You missed! ";
+                                foreach (char c in air)
+                                {
+                                    Console.Write(c);
+                                    System.Threading.Thread.Sleep(20);
+                                }
+                                System.Threading.Thread.Sleep(2000);
+                                Console.ResetColor();
+                                Combat.DoAttack(enemy, mario4);
+                                System.Threading.Thread.Sleep(2000);
+                            }
+                            else
+                            {
+                                Combat.DoBattle(mario4, enemy);
+                                if (enemy.Life <= 0)
+                                {
+                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
+                                    Console.ForegroundColor = ConsoleColor.Black;
+                                    Console.BackgroundColor = ConsoleColor.Yellow;
+                                    System.Threading.Thread.Sleep(1000);
+
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    string defeat = $" You completed Phase 3! ";
+                                    int length = enemy.Name.Length;
+                                    Console.CursorLeft = Console.BufferWidth - (length + 70);
+                                    foreach (char c in defeat)
+                                    {
+                                        Console.Write(c);
+                                        System.Threading.Thread.Sleep(5);
+                                    }
+                                    System.Threading.Thread.Sleep(2000);
+                                    exitEncounter = true;
+                                    Console.ResetColor();
+                                }
+                            }
+                            break;
+
+                        case ConsoleKey.T:
+                            Console.Clear();
+                            Console.WriteLine();
+                            Console.WriteLine();
+
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("___________________________________");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@&@&@@@@@@@@@@@/%///%@@@@@@@@@@");//5
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@*****&&@%@@@%(%@((((@@&@/*...@");//6
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@(**% #/*//@,*%.&##% .&/,/@&(@*@@");//7
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@&@#.//*./@%,,,,,,,,,,,,@@@@/.&@@");//8
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@&&&/#(((&/,,/**##*,,(,,&&@@@@@@");//9
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@@*@#*/*( ##,##/(&(,%**/%***&@@");//10
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@@%#@.@****,,,,,,,/#.% #&/**&@@");//11
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@,#(.@**/..,.. ...@@%/@@&@#@@@@");//12
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@*&@/*****@.........@@@@@@@@@@@@@");//13
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@(*&/*****//.......,@**&@@@@@@@@@@");//14
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@@@//****/.,,,,.*****&@@@@@@@@@@@");//15
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@&/****//&@@@@@//**/***&@@@@@@@@@");//16
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("@@@. .#/*&&@@@@@@@@&&@*,&@@@@@@@@@@");//17
+                            Console.CursorLeft = Console.BufferWidth - 82;
+                            Console.WriteLine("___________________________________");//18
+
+                            Console.WriteLine();
+                            Console.BackgroundColor = ConsoleColor.Yellow;
+                            Console.ForegroundColor = ConsoleColor.Black;
+                            int nameLength = enemy.Name.Length;
+                            int normalizedName = ((nameLength - 5) / (12));
+                            Console.CursorLeft = Console.BufferWidth - (72 + normalizedName);
+                            Console.WriteLine(" " + " " + enemy.Name + " " + " ");
+                            Console.WriteLine();
+                            Console.ResetColor();
+
+                            int descriptionLength = enemy.Description.Length;
+                            int normalized = ((descriptionLength - 10) / (32));
+                            Console.CursorLeft = Console.BufferWidth - (80 + normalized);
+                            Console.Write("\"" + $"{enemy.Description}" + "\"");
+
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 68;
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            Console.Write("HP: ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write($"{enemy.MaxLife}");
+
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 72;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.Write("Attack Power: ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write($"{enemy.MaxDamage}");
+
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 71;
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.Write("Accuracy: ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write($"{enemy.HitChance}%");
+
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 70;
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.Write("Evasion: ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write($"{enemy.Block}%");
+
+                            bool leaveStats = false;
+                            do
+                            {
+                                ConsoleKey space = Console.ReadKey(true).Key;
+                                switch (space)
+                                {
+                                    case ConsoleKey.Spacebar:
+                                        leaveStats = true;
+                                        break;
+                                }
+
+                            } while (!leaveStats);
+                            break;
+
+                        case ConsoleKey.F:
+                            Console.WriteLine();
+                            Console.CursorLeft = Console.BufferWidth - 95;
+                            Console.BackgroundColor = ConsoleColor.White;
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            string flee = $" Fleeing is not an option in this fight! ";
+                            foreach (char c in flee)
+                            {
+                                Console.Write(c);
+                                System.Threading.Thread.Sleep(20);
+                            }
+                            System.Threading.Thread.Sleep(500);
+                            Console.ResetColor();
+                            Combat.DoAttack(enemy, mario4);
+                            System.Threading.Thread.Sleep(3000);
+                            break;
+
+                        case ConsoleKey.Escape:
+                            Console.Clear();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            string really = String.Format("{0, " + 69 + "}", ". . .");
+                            foreach (char c in really)
+                            {
+                                Console.Write(c);
+                                System.Threading.Thread.Sleep(80);
+                            }
+                            Console.Clear();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            string leave = String.Format("{0, " + 84 + "}", "Are you sure you want to leave?\n");
+                            foreach (char c in leave)
+                            {
+                                Console.Write(c);
+                                System.Threading.Thread.Sleep(40);
+                            }
+
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.Write(String.Format("{0, " + 58 + "}", "Y) "));
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write("Yes, I want to leave.\n");
+                            Console.WriteLine();
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.Write(String.Format("{0, " + 56 + "}", "N) "));
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write("No! I want to keep playing!");
+                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+
+                            switch (exitChoice)
+                            {
+                                case ConsoleKey.Y:
+                                    Console.Clear();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Console.BackgroundColor = ConsoleColor.White;
+                                    Console.ForegroundColor = ConsoleColor.Black;
+                                    string thanks = String.Format("{0, " + 84 + "}", "Thank you for playing my game!");
+                                    foreach (char c in thanks)
+                                    {
+                                        Console.Write(c);
+                                        System.Threading.Thread.Sleep(40);
+                                    }
+                                    System.Threading.Thread.Sleep(3000);
+                                    Console.WriteLine();
+                                    Console.WriteLine();
+                                    Environment.Exit(0);
+                                    break;
+                                case ConsoleKey.N:
+                                    break;
+                            }
+                            break;
+
+                    }
+                    if (mario4.Life <= 0)
+                    {
+                        System.Threading.Thread.Sleep(1500);
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+
+                        Console.Beep(220, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(349, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(330, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(294, 150);
+                        System.Threading.Thread.Sleep(50);
+                        Console.Beep(262, 150);
+
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.White;
+                        string gameOver = String.Format("{0, " + 73 + "}", "GAME OVER\n");
+                        foreach (char c in gameOver)
+                        {
+                            Console.Write(c);
+                            System.Threading.Thread.Sleep(80);
+                        }
+                        System.Threading.Thread.Sleep(3000);
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        string stats = String.Format("{0, " + 57 + "}", $"You completed");
+                        Console.Write(stats);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write(" 3 ");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("waves and defeated");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write(" 21 ");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("enemies!");
+
+
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.White;
+                        string leave = String.Format("{0, " + 82 + "}", "Would you like to try again?\n");
+                        foreach (char c in leave)
+                        {
+                            Console.Write(c);
+                            System.Threading.Thread.Sleep(40);
+                        }
+                        System.Threading.Thread.Sleep(1000);
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write(String.Format("{0, " + 63 + "}", "Y) "));
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("Count me in!\n");
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write(String.Format("{0, " + 56 + "}", "N) "));
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("No, I think I've had enough.");
+
+                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+
+                        switch (exitChoice)
+                        {
+                            case ConsoleKey.Y:
+                                mario4.Life = 50;
+                                Console.Clear();
+                                break;
+                            case ConsoleKey.N:
+                                Console.Clear();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Console.BackgroundColor = ConsoleColor.White;
+                                Console.ForegroundColor = ConsoleColor.Black;
+                                string thanks = String.Format("{0, " + 84 + "}", "Thank you for playing my game!");
+                                foreach (char c in thanks)
+                                {
+                                    Console.Write(c);
+                                    System.Threading.Thread.Sleep(40);
+                                }
+                                System.Threading.Thread.Sleep(3000);
+                                Console.WriteLine();
+                                Console.WriteLine();
+                                Environment.Exit(0);
+                                break;
+                            default:
+                                Console.Clear();
+                                break;
+                        }
+                        break;
+
+                    }
+
+                    Console.Clear();
+
+                } while (finalFight && !exitEncounter);
+                #endregion
+
+            } while (finalFight);
+
+            #endregion
+
+            #region You Win!
+            Console.Beep(220, 150);
+            Console.Beep(220, 150);
+            Console.Beep(233, 150);
+            Console.Beep(220, 150);
+            Console.Beep(196, 150);
+            Console.Beep(175, 150);
+            Console.Beep(131, 150);
+            Console.Beep(175, 150);
+            Console.Beep(196, 250);
+            System.Threading.Thread.Sleep(350);
+            Console.Beep(262, 150);
+            Console.Beep(262, 800);
+            System.Threading.Thread.Sleep(400);
+
+            Console.Beep(208, 900);
+            Console.Beep(233, 900);
+            Console.Beep(262, 900);
             #endregion
 
         }//end Main()

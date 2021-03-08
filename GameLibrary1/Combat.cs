@@ -23,7 +23,7 @@ namespace GameLibrary1
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
 
-                    Console.CursorLeft = Console.BufferWidth - 100;
+                    Console.CursorLeft = Console.BufferWidth - 80;
                     string attack = $"Mario hit {defender.Name} for " +
                         $"{damageDealt} damage!";
                     foreach (char c in attack)
@@ -41,7 +41,7 @@ namespace GameLibrary1
                     string attack = $"{attacker.Name} hit Mario for " +
                         $"{damageDealt} damage!";
                     int length = attacker.Name.Length;
-                    Console.CursorLeft = Console.BufferWidth - (length + 25);
+                    Console.CursorLeft = Console.BufferWidth - (length + 26);
                     foreach (char c in attack)
                     {
                         Console.Write(c);
@@ -58,7 +58,7 @@ namespace GameLibrary1
                     Console.ForegroundColor = ConsoleColor.Red;
                     System.Threading.Thread.Sleep(300);
 
-                    Console.CursorLeft = Console.BufferWidth - 90;
+                    Console.CursorLeft = Console.BufferWidth - 70;
                     Console.Write("Mario missed!");
 
                     System.Threading.Thread.Sleep(500);
@@ -70,7 +70,7 @@ namespace GameLibrary1
                     System.Threading.Thread.Sleep(300);
 
                     int length = attacker.Name.Length;
-                    Console.CursorLeft = Console.BufferWidth - (length + 15);
+                    Console.CursorLeft = Console.BufferWidth - (length + 17);
                     Console.Write($"{attacker.Name} missed!");
 
                     System.Threading.Thread.Sleep(500);
