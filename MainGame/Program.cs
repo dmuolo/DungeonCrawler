@@ -1658,12 +1658,12 @@ namespace MainGame
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write($"Mario's ");
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write($"HP: {mario.Life} / {mario.MaxLife} ");
+                    Console.Write($"HP: {mario2.Life} / {mario2.MaxLife} ");
                     Console.Write("------------------------------");
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(" Wave 2 ");
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write($"Enemies Defeated: {enemiesDefeated} / 7");
+                    Console.Write($"Enemies Defeated: {enemiesDefeated2} / 7");
                     Console.Write(" ------------------------ ");
                     int numChars = (enemy.Name).Length;
                     Console.CursorLeft = Console.BufferWidth - (numChars + 13);
@@ -2050,6 +2050,7 @@ namespace MainGame
                         Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//18
                     }
 
+                    Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " J) ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -2853,12 +2854,12 @@ namespace MainGame
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write($"Mario's ");
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write($"HP: {mario.Life} / {mario.MaxLife} ");
+                    Console.Write($"HP: {mario3.Life} / {mario3.MaxLife} ");
                     Console.Write("------------------------------");
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(" Wave 3 ");
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write($"Enemies Defeated: {enemiesDefeated} / 7");
+                    Console.Write($"Enemies Defeated: {enemiesDefeated3} / 7");
                     Console.Write(" ------------------------ ");
                     int numChars = (enemy.Name).Length;
                     Console.CursorLeft = Console.BufferWidth - (numChars + 13);
@@ -3245,6 +3246,7 @@ namespace MainGame
                         Console.Write("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");//18
                     }
 
+                    Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.Write(" " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " J) ");
                     Console.ForegroundColor = ConsoleColor.White;
