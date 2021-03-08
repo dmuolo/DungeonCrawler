@@ -291,6 +291,7 @@ namespace MainGame
 
             Console.BackgroundColor = ConsoleColor.DarkRed;
             Console.ForegroundColor = ConsoleColor.Black;
+            Console.Clear();
 
             System.Threading.Thread.Sleep(100);
 
@@ -333,6 +334,8 @@ namespace MainGame
             #endregion
 
             #region Region 1
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.Clear();
             Console.ResetColor();
             Console.WriteLine();
