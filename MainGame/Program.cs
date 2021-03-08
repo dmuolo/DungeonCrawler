@@ -19,6 +19,22 @@ namespace MainGame
 
             #endregion
 
+            Console.Beep(131, 600);
+            Console.Beep(147, 1000);
+            Console.Beep(147, 600);
+            Console.Beep(165, 1000);
+            Console.Beep(196, 100);
+            Console.Beep(175, 100);
+            Console.Beep(165, 200);
+
+            Console.Beep(131, 600);
+            Console.Beep(147, 1000);
+            Console.Beep(147, 600);
+            Console.Beep(165, 1000);
+            Console.Beep(196, 100);
+            Console.Beep(175, 100);
+            Console.Beep(165, 200);
+
             #region Start Game
 
             #region Title Screen
@@ -103,15 +119,6 @@ namespace MainGame
             System.Threading.Thread.Sleep(500);
 
             Console.ForegroundColor = ConsoleColor.White;
-
-            //#region Test
-            //Console.Beep(250, 1100);
-            //Random textBeepEffect = new Random();
-            //int beeps = textBeepEffect.Next(37, 1000);
-            //Console.Beep(beeps, 500);
-            //System.Threading.Thread.Sleep(2000);
-            //Console.Beep(beeps, 500);
-            //#endregion
 
             string intro1 = String.Format("{0, " + 72 + "}", "Mail call!");
             Console.WriteLine();
@@ -5609,6 +5616,69 @@ namespace MainGame
             Console.Beep(208, 900);
             Console.Beep(233, 900);
             Console.Beep(262, 900);
+
+            Console.Clear();
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@&/*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@....***********%@@...@@@@@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@...@@@***************@@@@@#.@@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@..@@@@@*****************@@@@@@@.@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@.&@@@@@@*****************@@@@*****.@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@.****@@@@@***************@@@@******,.@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@.******@@@@@#*********&@@@@@@******,.@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@.*******@@@@@@@@@@@@@@@@@@@@@******,.@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@.*******@@@@@@@@/.......(%@@@@****,,.@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@.******@@@@.&&&&&&&&&.&&&&.,%&@,,,.@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@.****@@@.&&&&..&&&&&..&&&#.%%%%#.@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@.,%%%%%.&&&&&&&&&&&&&&&&##,%..@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@..%%#&&&&&&,,,,,,&&&&##.@@.&..&.@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@.&&&&&&.**.&&&###.#..&&&&&&.@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@,.#%&&&&&&##%..&&&&&&##/..&@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@..,,.#####.&**.&##.@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@.&.**..&&&&&&****,..@@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@%.&.***.*@@@@@@*&.**,,.@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@/&&&&.****.#@@@@@@@.*.....@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@/.&&&&#.@@@@@@@@@@@@@@%%,.@@@@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@.....@@@@@@@@@@@%%%*,*,..@@@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@..*******..%%%%%%%/..,,*****,.@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@.**********,,.@@.,,,********,.@@@@@@@@@@@@");
+            Console.CursorLeft = Console.BufferWidth - 95;
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@..*******,,,.*@@@...**,,,,...@@@@@@@@@@@@@");
+
+            string ending = String.Format("{0, " + 90 + "}", "I'm sorry, but the princess is in another castle!");
+            Console.WriteLine();
+            Console.WriteLine();
+            foreach (char c in ending)
+            {
+                Console.Write(c);
+                System.Threading.Thread.Sleep(100);
+            }
+            System.Threading.Thread.Sleep(2000);
             #endregion
 
         }//end Main()
