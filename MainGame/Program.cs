@@ -19,22 +19,6 @@ namespace MainGame
 
             #endregion
 
-            Console.Beep(131, 600);
-            Console.Beep(147, 1000);
-            Console.Beep(147, 600);
-            Console.Beep(165, 1000);
-            Console.Beep(196, 100);
-            Console.Beep(175, 100);
-            Console.Beep(165, 200);
-
-            Console.Beep(131, 600);
-            Console.Beep(147, 1000);
-            Console.Beep(147, 600);
-            Console.Beep(165, 1000);
-            Console.Beep(196, 100);
-            Console.Beep(175, 100);
-            Console.Beep(165, 200);
-
             #region Start Game
 
             #region Title Screen
@@ -859,7 +843,7 @@ namespace MainGame
                     switch (userChoice)
                     {
                         case ConsoleKey.J:
-                            marioWeapon = weapon0;
+                            mario.EquippedWeapon = weapon0;
                             Console.Beep(100, 150);
                             Console.Beep(250, 150);
                             if (enemy.IsSpiked == true)
@@ -945,7 +929,7 @@ namespace MainGame
                             break;
 
                         case ConsoleKey.H:
-                            marioWeapon = weapon1;
+                            mario.EquippedWeapon = weapon1;
                             Console.Beep(200, 500);
                             System.Threading.Thread.Sleep(400);
                             Console.Beep(70, 100);
@@ -1007,17 +991,6 @@ namespace MainGame
                                 }
                             }
                             break;
-                        /*
-                    case ConsoleKey.I:
-                        Combat.DoBattle(mario, enemy);
-                        Console.Clear();
-                        if (enemy.Life <= 0)
-                        {
-                            Console.WriteLine($"\nYou defeated the {enemy.Name}!");
-                            enemiesDefeated++;
-                        }
-                        break;
-                        */
 
                         case ConsoleKey.T:
                             Console.Clear();
@@ -1586,8 +1559,8 @@ namespace MainGame
             System.Threading.Thread.Sleep(3000);
             Console.Clear();
 
-            Weapon weapon2 = new Weapon("Super Jump", 3, 3, "Now that's a jump.", true);
-            Weapon weapon3 = new Weapon("Super Hammer", 3, 3, "Now's that's a hammer.", false);
+            Weapon weapon2 = new Weapon("Super Jump", 1, 3, "Now that's a jump.", true);
+            Weapon weapon3 = new Weapon("Super Hammer", 1, 3, "Now's that's a hammer.", false);
             Mario mario2 = new Mario("Mario", 20, 20, 65, 7, marioWeapon);
 
             int enemiesDefeated2 = 0;
@@ -2071,13 +2044,13 @@ namespace MainGame
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Quit Game");
 
-                    ConsoleKey userChoice = Console.ReadKey(true).Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
-
+                    ConsoleKey userChoice = Console.ReadKey(true).Key;
 
                     switch (userChoice)
                     {
                         case ConsoleKey.J:
-                            marioWeapon = weapon2;
+                            //marioWeapon = weapon2;
+                            mario2.EquippedWeapon = weapon2;
                             Console.Beep(100, 150);
                             Console.Beep(250, 150);
                             if (enemy.IsSpiked == true)
@@ -2163,7 +2136,7 @@ namespace MainGame
                             break;
 
                         case ConsoleKey.H:
-                            marioWeapon = weapon3;
+                            mario2.EquippedWeapon = weapon3;
                             Console.Beep(200, 500);
                             System.Threading.Thread.Sleep(400);
                             Console.Beep(70, 100);
@@ -3273,7 +3246,7 @@ namespace MainGame
                     switch (userChoice)
                     {
                         case ConsoleKey.J:
-                            marioWeapon = weapon4;
+                            mario3.EquippedWeapon = weapon4;
                             Console.Beep(100, 150);
                             Console.Beep(250, 150);
                             if (enemy.IsSpiked == true)
@@ -3359,7 +3332,7 @@ namespace MainGame
                             break;
 
                         case ConsoleKey.H:
-                            marioWeapon = weapon5;
+                            mario3.EquippedWeapon = weapon5;
                             Console.Beep(200, 500);
                             System.Threading.Thread.Sleep(400);
                             Console.Beep(70, 100);
@@ -4164,7 +4137,7 @@ namespace MainGame
                     switch (userChoice)
                     {
                         case ConsoleKey.J:
-                            marioWeapon = weapon4;
+                            mario4.EquippedWeapon = weapon4;
                             Console.Beep(100, 150);
                             Console.Beep(250, 150);
                             Combat.DoBattle(mario4, enemy);
@@ -4192,7 +4165,7 @@ namespace MainGame
                             break;
 
                         case ConsoleKey.H:
-                            marioWeapon = weapon5;
+                            mario4.EquippedWeapon = weapon5;
                             Console.Beep(200, 500);
                             System.Threading.Thread.Sleep(400);
                             Console.Beep(70, 100);
@@ -5679,6 +5652,58 @@ namespace MainGame
                 System.Threading.Thread.Sleep(100);
             }
             System.Threading.Thread.Sleep(2000);
+
+            Console.Beep(131, 600);
+            Console.Beep(147, 900);
+            System.Threading.Thread.Sleep(100);
+            Console.Beep(147, 600);
+            Console.Beep(165, 500);
+            System.Threading.Thread.Sleep(100);
+            Console.Beep(196, 100);
+            Console.Beep(175, 100);
+            Console.Beep(165, 200);
+
+            System.Threading.Thread.Sleep(1000);
+            Console.Beep(131, 600);
+            Console.Beep(147, 900);
+            System.Threading.Thread.Sleep(100);
+            Console.Beep(147, 600);
+            Console.Beep(165, 500);
+            System.Threading.Thread.Sleep(100);
+            Console.Beep(196, 100);
+            Console.Beep(175, 100);
+            Console.Beep(165, 200);
+
+            System.Threading.Thread.Sleep(1000);
+            Console.Beep(131, 600);
+            Console.Beep(147, 900);
+            System.Threading.Thread.Sleep(100);
+            Console.Beep(147, 600);
+            Console.Beep(165, 500);
+            System.Threading.Thread.Sleep(100);
+            Console.Beep(196, 100);
+            Console.Beep(175, 100);
+            Console.Beep(165, 200);
+
+            System.Threading.Thread.Sleep(1000);
+            Console.Beep(131, 600);
+            Console.Beep(147, 900);
+            System.Threading.Thread.Sleep(100);
+            Console.Beep(147, 600);
+            Console.Beep(165, 500);
+            System.Threading.Thread.Sleep(100);
+            Console.Beep(196, 100);
+            Console.Beep(175, 100);
+            Console.Beep(165, 200);
+
+            string thankYou = String.Format("{0, " + 84 + "}", "Thank you for playing my game!");
+            foreach (char c in thankYou)
+            {
+                Console.Write(c);
+                System.Threading.Thread.Sleep(40);
+            }
+
+            System.Threading.Thread.Sleep(3000);
             #endregion
 
         }//end Main()
