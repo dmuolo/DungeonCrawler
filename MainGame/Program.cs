@@ -359,11 +359,11 @@ namespace MainGame
 
             do
             {
-                Enemy goomba = new Enemy("Goomba", 2, 2, 30, 0, "Small fry. No problemo!", 1, 1, false, false, false);
+                Enemy goomba = new Enemy("Goomba", 2, 2, 25, 0, "Small fry. No problemo!", 1, 1, false, false, false);
                 Enemy paragoomba = new Enemy("Paragoomba", 2, 2, 30, 0, "A goomba with wings. Easy!", 1, 1, false, true, false);
                 Enemy spikyGoomba = new Enemy("Spiky Goomba", 2, 2, 30, 0, "A goomba with a spike on its head.", 2, 2, true, false, false);
-                Enemy koopa = new Enemy("Koopa", 4, 4, 35, 10, "A koopa troopa. They're Bowser's followers.", 2, 2, false, false, false);//1 defense
-                Enemy paratroopa = new Enemy("Paratroopa", 4, 4, 40, 10, "A flying koopa troopa! They're Bowser's followers.", 2, 2, false, true, false);//1 defense
+                Enemy koopa = new Enemy("Koopa", 4, 4, 35, 10, "A koopa troopa. They're Bowser's followers.", 1, 2, false, false, false);//1 defense
+                Enemy paratroopa = new Enemy("Paratroopa", 4, 4, 40, 10, "A flying koopa troopa! They're Bowser's followers.", 1, 2, false, true, false);//1 defense
 
                 Enemy[] enemies =
                 {
@@ -1568,11 +1568,11 @@ namespace MainGame
 
             do
             {
-                Enemy shyGuy = new Enemy("Shy Guy", 7, 7, 25, 0, "A little red guy causing a ruckus in the Toy Box.", 2, 2, false, false, false);
-                Enemy pyroGuy = new Enemy("Pyro Guy", 7, 7, 25, 0, "A shy guy that's literally on fire!", 4, 4, false, false, true);
-                Enemy skyGuy = new Enemy("Sky Guy", 7, 7, 20, 0, "A flying shy guy with a sling shot! Oh my!", 3, 3, false, true, false);
-                Enemy clubba = new Enemy("Clubba", 8, 8, 30, 10, "An off-duty guard from Tubba Blubba's castle.", 3, 3, true, false, false);
-                Enemy koopatrol = new Enemy("Koopatrol", 8, 8, 40, 15, "An elite koopa solider from Bowser's castle!", 4, 4, true, false, false);//1 defense
+                Enemy shyGuy = new Enemy("Shy Guy", 7, 7, 25, 0, "A little red guy causing a ruckus in the Toy Box.", 1, 2, false, false, false);
+                Enemy pyroGuy = new Enemy("Pyro Guy", 7, 7, 25, 0, "A shy guy that's literally on fire!", 3, 5, false, false, true);
+                Enemy skyGuy = new Enemy("Sky Guy", 7, 7, 30, 0, "A flying shy guy with a sling shot! Oh my!", 2, 3, false, true, false);
+                Enemy clubba = new Enemy("Clubba", 8, 8, 30, 10, "An off-duty guard from Tubba Blubba's castle.", 3, 5, true, false, false);
+                Enemy koopatrol = new Enemy("Koopatrol", 8, 8, 40, 15, "An elite koopa solider from Bowser's castle!", 4, 5, true, false, false);//1 defense
 
                 Enemy[] enemies =
                 {
@@ -2764,11 +2764,11 @@ namespace MainGame
 
             do
             {
-                Enemy dryBones = new Enemy("Dry Bones", 8, 8, 35, 0, "A skeleton koopa that looks pretty creepy!", 4, 4, false, false, false);//2 defense
-                Enemy koopatrol = new Enemy("Koopatrol", 8, 8, 40, 15, "An elite koopa solider with a spike on his helmet.", 4, 4, true, false, false);//1 defense
-                Enemy magikoopa = new Enemy("Magikoopa", 11, 11, 40, 10, "A magician of the koopa clan. Lots of HP!", 3, 3, false, false, false);//could add heal function
-                Enemy hammerBro = new Enemy("Hammer Bro", 12, 12, 40, 20, "This retro punk that wields a hefty hammer.", 5, 5, false, false, false);
-                Enemy billBlaster = new Enemy("Bill Blaster", 4, 4, 45, 10, "A cannon that shoots out bullet bills.", 8, 8, false, false, false);//1 defense
+                Enemy dryBones = new Enemy("Dry Bones", 8, 8, 35, 0, "A skeleton koopa that looks pretty creepy!", 3, 4, false, false, false);//2 defense
+                Enemy koopatrol = new Enemy("Koopatrol", 8, 8, 40, 15, "An elite koopa solider with a spike on his helmet.", 4, 5, true, false, false);//1 defense
+                Enemy magikoopa = new Enemy("Magikoopa", 11, 11, 40, 10, "A magician of the koopa clan. Lots of HP!", 3, 5, false, false, false);//could add heal function
+                Enemy hammerBro = new Enemy("Hammer Bro", 12, 12, 40, 20, "This retro punk that wields a hefty hammer.", 4, 6, false, false, false);
+                Enemy billBlaster = new Enemy("Bill Blaster", 4, 4, 55, 10, "A cannon that shoots out bullet bills.", 6, 8, false, false, false);//1 defense
 
                 Enemy[] enemies =
                 {
@@ -4007,7 +4007,7 @@ namespace MainGame
 
             do
             {
-                Enemy bowser0 = new Enemy("Bowser", 25, 25, 30, 0, "The koopa king, and he ain't happy!", 3, 5, false, false, false);
+                Enemy bowser0 = new Enemy("Bowser", 25, 25, 35, 0, "The koopa king, and he ain't happy!", 3, 5, false, false, false);
                 Enemy enemy = bowser0;
                 Console.Clear();
                 Console.ResetColor();
@@ -4529,7 +4529,7 @@ namespace MainGame
 
                 #region Phase 2
 
-                Enemy bowser1 = new Enemy("Bowser", 25, 25, 30, 10, "Oh no! He's in the Koopa Clown Car!", 5, 7, false, true, false);
+                Enemy bowser1 = new Enemy("Bowser", 25, 25, 40, 10, "Oh no! He's in the Koopa Clown Car!", 5, 7, false, true, false);
                 enemy = bowser1;
                 exitEncounter = false;
                 do
@@ -5049,7 +5049,7 @@ namespace MainGame
                 #region Phase 3
 
 
-                Enemy bowser2 = new Enemy("Bowser", 50, 50, 40, 10, "Great... and now he's got the Star Rod!", 5, 10, false, false, false);
+                Enemy bowser2 = new Enemy("Bowser", 50, 50, 45, 10, "Great... and now he's got the Star Rod!", 5, 10, false, false, false);
                 enemy = bowser2;
                 Console.ResetColor();
                 exitEncounter = false;
@@ -5198,6 +5198,7 @@ namespace MainGame
                                     System.Threading.Thread.Sleep(5);
                                 }
                                 System.Threading.Thread.Sleep(2000);
+                                finalFight = false;
                                 exitEncounter = true;
                                 Console.ResetColor();
                             }
@@ -5246,6 +5247,7 @@ namespace MainGame
                                         System.Threading.Thread.Sleep(5);
                                     }
                                     System.Threading.Thread.Sleep(2000);
+                                    finalFight = false;
                                     exitEncounter = true;
                                     Console.ResetColor();
                                 }
@@ -5572,6 +5574,8 @@ namespace MainGame
             #endregion
 
             #region You Win!
+            System.Threading.Thread.Sleep(500);
+
             Console.Beep(220, 150);
             Console.Beep(220, 150);
             Console.Beep(233, 150);
@@ -5663,7 +5667,6 @@ namespace MainGame
             Console.Beep(175, 100);
             Console.Beep(165, 200);
 
-            System.Threading.Thread.Sleep(1000);
             Console.Beep(131, 600);
             Console.Beep(147, 900);
             System.Threading.Thread.Sleep(100);
@@ -5674,7 +5677,6 @@ namespace MainGame
             Console.Beep(175, 100);
             Console.Beep(165, 200);
 
-            System.Threading.Thread.Sleep(1000);
             Console.Beep(131, 600);
             Console.Beep(147, 900);
             System.Threading.Thread.Sleep(100);
@@ -5685,7 +5687,6 @@ namespace MainGame
             Console.Beep(175, 100);
             Console.Beep(165, 200);
 
-            System.Threading.Thread.Sleep(1000);
             Console.Beep(131, 600);
             Console.Beep(147, 900);
             System.Threading.Thread.Sleep(100);
