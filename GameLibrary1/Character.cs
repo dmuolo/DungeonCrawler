@@ -31,14 +31,14 @@ namespace GameLibrary1
             Life = life;
             HitChance = hitChance;
             Block = block;
-        }//protected says that class is available. like internal. available within project it's created or to children of its class
+        }
         public Character()
         {
         }
 
-        public virtual int CalcBlock()//instance method already knows everything about the player and the monster
+        public virtual int CalcBlock()
         {
-            return Block;//don't need to do this by itself, but with the virtual keyword, it allows us to change this functionality in the child classes
+            return Block;
         }
 
         public virtual int CalcHitChance()
@@ -46,9 +46,9 @@ namespace GameLibrary1
             return HitChance;
         }
 
-        public virtual int CalcDamage()//virtual allows us to override but doesn't require us to
+        public virtual int CalcDamage()
         {
             return 0;
-        }//we can't set base functionality here. Player's damage will rely on EquippedWeapon
+        }
     }
 }

@@ -22,17 +22,11 @@ namespace GameLibrary1
                 Life,
                 MaxLife,
                 CalcHitChance(),//to see modified value
-                Block);//no parent string exists
-        }//end ToString()
+                Block);
+        }
 
         public override int CalcDamage()
         {
-            //Random rand = new Random();
-
-            //int damage = rand.Next(EquippedWeapon.MinDamage, EquippedWeapon.MaxDamage + 1);
-
-            //return damage;
-
             return new Random().Next(EquippedWeapon.MinDamage, EquippedWeapon.MaxDamage + 1);
         }
 

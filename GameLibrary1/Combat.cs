@@ -88,7 +88,5 @@ namespace GameLibrary1
                 System.Threading.Thread.Sleep(700);
             }
         }
-
-        //initiative system initiative property in character class
     }
 }

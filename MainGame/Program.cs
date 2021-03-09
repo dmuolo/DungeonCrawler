@@ -362,8 +362,8 @@ namespace MainGame
                 Enemy goomba = new Enemy("Goomba", 2, 2, 25, 0, "Small fry. No problemo!", 1, 1, false, false, false);
                 Enemy paragoomba = new Enemy("Paragoomba", 2, 2, 30, 0, "A goomba with wings. Easy!", 1, 1, false, true, false);
                 Enemy spikyGoomba = new Enemy("Spiky Goomba", 2, 2, 30, 0, "A goomba with a spike on its head.", 2, 2, true, false, false);
-                Enemy koopa = new Enemy("Koopa", 4, 4, 35, 10, "A koopa troopa. They're Bowser's followers.", 1, 2, false, false, false);//1 defense
-                Enemy paratroopa = new Enemy("Paratroopa", 4, 4, 40, 10, "A flying koopa troopa! They're Bowser's followers.", 1, 2, false, true, false);//1 defense
+                Enemy koopa = new Enemy("Koopa", 4, 4, 35, 10, "A koopa troopa. They're Bowser's followers.", 1, 2, false, false, false);
+                Enemy paratroopa = new Enemy("Paratroopa", 4, 4, 40, 10, "A flying koopa troopa! They're Bowser's followers.", 1, 2, false, true, false);
 
                 Enemy[] enemies =
                 {
@@ -1309,7 +1309,7 @@ namespace MainGame
                             Console.Write(String.Format("{0, " + 56 + "}", "N) "));
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.Write("No! I want to keep playing!");
-                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                            ConsoleKey exitChoice = Console.ReadKey().Key;
 
                             switch (exitChoice)
                             {
@@ -1418,7 +1418,7 @@ namespace MainGame
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("No, I think I've had enough.");
 
-                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                        ConsoleKey exitChoice = Console.ReadKey().Key;
 
                         switch (exitChoice)
                         {
@@ -2098,7 +2098,6 @@ namespace MainGame
                                 Combat.DoBattle(mario2, enemy);
                                 if (enemy.Life <= 0)
                                 {
-                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                     Console.ForegroundColor = ConsoleColor.Black;
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
@@ -2162,7 +2161,6 @@ namespace MainGame
                                 Combat.DoBattle(mario2, enemy);
                                 if (enemy.Life <= 0)
                                 {
-                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                     Console.ForegroundColor = ConsoleColor.Black;
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
@@ -2516,7 +2514,7 @@ namespace MainGame
                             Console.Write(String.Format("{0, " + 56 + "}", "N) "));
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.Write("No! I want to keep playing!");
-                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                            ConsoleKey exitChoice = Console.ReadKey().Key;
 
                             switch (exitChoice)
                             {
@@ -2612,7 +2610,7 @@ namespace MainGame
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("No, I think I've had enough.");
 
-                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                        ConsoleKey exitChoice = Console.ReadKey().Key;
 
                         switch (exitChoice)
                         {
@@ -3240,7 +3238,7 @@ namespace MainGame
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Quit Game");
 
-                    ConsoleKey userChoice = Console.ReadKey(true).Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                    ConsoleKey userChoice = Console.ReadKey(true).Key;
 
 
                     switch (userChoice)
@@ -3294,7 +3292,6 @@ namespace MainGame
                                 Combat.DoBattle(mario3, enemy);
                                 if (enemy.Life <= 0)
                                 {
-                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                     Console.ForegroundColor = ConsoleColor.Black;
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
@@ -3358,7 +3355,6 @@ namespace MainGame
                                 Combat.DoBattle(mario3, enemy);
                                 if (enemy.Life <= 0)
                                 {
-                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                     Console.ForegroundColor = ConsoleColor.Black;
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
@@ -3712,7 +3708,7 @@ namespace MainGame
                             Console.Write(String.Format("{0, " + 56 + "}", "N) "));
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.Write("No! I want to keep playing!");
-                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                            ConsoleKey exitChoice = Console.ReadKey().Key;
 
                             switch (exitChoice)
                             {
@@ -3823,7 +3819,7 @@ namespace MainGame
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("No, I think I've had enough.");
 
-                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                        ConsoleKey exitChoice = Console.ReadKey().Key;
 
                         switch (exitChoice)
                         {
@@ -4143,7 +4139,6 @@ namespace MainGame
                             Combat.DoBattle(mario4, enemy);
                             if (enemy.Life <= 0)
                             {
-                                //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                 Console.ForegroundColor = ConsoleColor.Black;
                                 Console.BackgroundColor = ConsoleColor.Yellow;
                                 System.Threading.Thread.Sleep(1000);
@@ -4191,7 +4186,6 @@ namespace MainGame
                                 Combat.DoBattle(mario4, enemy);
                                 if (enemy.Life <= 0)
                                 {
-                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                     Console.ForegroundColor = ConsoleColor.Black;
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
@@ -4370,7 +4364,7 @@ namespace MainGame
                             Console.Write(String.Format("{0, " + 56 + "}", "N) "));
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.Write("No! I want to keep playing!");
-                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                            ConsoleKey exitChoice = Console.ReadKey().Key;
 
                             switch (exitChoice)
                             {
@@ -4483,7 +4477,7 @@ namespace MainGame
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("No, I think I've had enough.");
 
-                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                        ConsoleKey exitChoice = Console.ReadKey().Key;
 
                         switch (exitChoice)
                         {
@@ -4662,7 +4656,6 @@ namespace MainGame
                             Combat.DoBattle(mario4, enemy);
                             if (enemy.Life <= 0)
                             {
-                                //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                 Console.ForegroundColor = ConsoleColor.Black;
                                 Console.BackgroundColor = ConsoleColor.Yellow;
                                 System.Threading.Thread.Sleep(1000);
@@ -4710,7 +4703,6 @@ namespace MainGame
                                 Combat.DoBattle(mario4, enemy);
                                 if (enemy.Life <= 0)
                                 {
-                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                     Console.ForegroundColor = ConsoleColor.Black;
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
@@ -4889,7 +4881,7 @@ namespace MainGame
                             Console.Write(String.Format("{0, " + 56 + "}", "N) "));
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.Write("No! I want to keep playing!");
-                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                            ConsoleKey exitChoice = Console.ReadKey().Key;
 
                             switch (exitChoice)
                             {
@@ -5002,7 +4994,7 @@ namespace MainGame
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("No, I think I've had enough.");
 
-                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                        ConsoleKey exitChoice = Console.ReadKey().Key;
 
                         switch (exitChoice)
                         {
@@ -5182,7 +5174,6 @@ namespace MainGame
                             Combat.DoBattle(mario4, enemy);
                             if (enemy.Life <= 0)
                             {
-                                //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                 Console.ForegroundColor = ConsoleColor.Black;
                                 Console.BackgroundColor = ConsoleColor.Yellow;
                                 System.Threading.Thread.Sleep(1000);
@@ -5231,7 +5222,6 @@ namespace MainGame
                                 Combat.DoBattle(mario4, enemy);
                                 if (enemy.Life <= 0)
                                 {
-                                    //loot drops, leveling, etc. could happen here. Healing could happen here. Etc.
                                     Console.ForegroundColor = ConsoleColor.Black;
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     System.Threading.Thread.Sleep(1000);
@@ -5412,7 +5402,7 @@ namespace MainGame
                             Console.Write(String.Format("{0, " + 56 + "}", "N) "));
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.Write("No! I want to keep playing!");
-                            ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                            ConsoleKey exitChoice = Console.ReadKey().Key;
 
                             switch (exitChoice)
                             {
@@ -5525,7 +5515,7 @@ namespace MainGame
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("No, I think I've had enough.");
 
-                        ConsoleKey exitChoice = Console.ReadKey().Key;//.ReadKey method, .Key property; If you put true in, it stops the key from showing to the screen
+                        ConsoleKey exitChoice = Console.ReadKey().Key;
 
                         switch (exitChoice)
                         {
