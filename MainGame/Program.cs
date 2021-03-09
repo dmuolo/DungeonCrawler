@@ -1450,9 +1450,6 @@ namespace MainGame
                                 Console.WriteLine();
                                 Environment.Exit(0);
                                 break;
-                            default:
-                                Console.Clear();
-                                break;
                         }
                         break;
 
@@ -2641,9 +2638,6 @@ namespace MainGame
                                 Console.WriteLine();
                                 Console.WriteLine();
                                 Environment.Exit(0);
-                                break;
-                            default:
-                                Console.Clear();
                                 break;
                         }
                         break;
@@ -3851,9 +3845,6 @@ namespace MainGame
                                 Console.WriteLine();
                                 Environment.Exit(0);
                                 break;
-                            default:
-                                Console.Clear();
-                                break;
                         }
                         break;
 
@@ -4508,9 +4499,6 @@ namespace MainGame
                                 Console.WriteLine();
                                 Environment.Exit(0);
                                 break;
-                            default:
-                                Console.Clear();
-                                break;
                         }
                         break;
 
@@ -5024,9 +5012,6 @@ namespace MainGame
                                 Console.WriteLine();
                                 Console.WriteLine();
                                 Environment.Exit(0);
-                                break;
-                            default:
-                                Console.Clear();
                                 break;
                         }
                         break;
@@ -5545,9 +5530,6 @@ namespace MainGame
                                 Console.WriteLine();
                                 Console.WriteLine();
                                 Environment.Exit(0);
-                                break;
-                            default:
-                                Console.Clear();
                                 break;
                         }
                         break;
